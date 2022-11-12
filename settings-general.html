@@ -1,0 +1,828 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/checkbox.css">
+    <link rel="stylesheet" href="assets/css/bootstrap-tokenfield.css">
+    <link rel="stylesheet" href="assets/css/theme-style.css">
+    <title>settings-general</title>
+</head>
+<body>
+    <div id="ordd-page" class="ordd-page">
+
+        <!-- Header -->
+        <div class="ordd-header">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="header-wrap">
+                            <div class="branding">
+                                <a href=""><img src="assets/images/ordd-logo.svg" alt="Logo" /></a>
+                            </div>
+
+                            <nav class="navbar navbar-expand-lg navbar-light ordd-navigation">
+                                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path fill="none" d="M0 0h24v24H0z"/><path d="M3 4h18v2H3V4zm0 7h12v2H3v-2zm0 7h18v2H3v-2z" fill="rgba(255,255,255,1)"/></svg>
+                                </span>
+                                </button>
+                                <div class="collapse navbar-collapse" id="navbarNav">
+                                    <ul class="navbar-nav menu nav-menu">
+                                        <li class="nav-item"><a class="nav-link" href="index.html">Dashboard</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="order.html">Abandoned Orders</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="email-template1.html">Templates</a></li>
+                                        <li class="nav-item active"><a class="nav-link" href="settings-general.html">Settings</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="reminder-sent-email.html">Reminder Sent</a></li>
+                                       <li class="nav-item"><a class="nav-link" href="product-report.html">Product Report</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="faq&support.html">FAQ & Support</a></li>
+                                     </ul>
+                                </div>
+                            </nav>
+
+                            <div class="ordd-version">
+                                <p class="ver-fig">Version 5.7.2</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Header End -->
+
+        <!-- Content Area -->
+        <div class="ordd-content-area">
+            <div class="container cw-full secondary-nav">
+                <div class="row">
+                    <div class="col-md-12">
+                        <!-- Secondary Navigation -->
+                        <div class="secondary-nav-wrap">
+                            <ul>
+                                <li class="current-menu-item"><a href="settings-general.html">General</a></li>
+                                <li><a href="sms-notification.html">Popup Templates</a></li>
+                                <li><a href="facebook-messenger.html">Facebook Messenger</a></li>
+                                <li><a href="sms-reminder.html">SMS</a></li>
+                                <li><a href="connectors.html">Connectors</a></li>
+                                <li><a href="email-reports.html">Email Report</a></li>
+                                <li><a href="license.html">License</a></li>
+                             </ul>
+                        </div>
+                        <!-- Secondary Navigation - End -->
+                    </div>
+                </div>
+            </div>
+
+            <div class="container fas-page-wrap">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="ordd-page-head phw-btn">
+                            <div class="col-left">
+                                <h1>General</h1>
+                                <p>General descriptions goes here.</p>
+                            </div>
+                            <div class="col-right">
+                                <button type="button">Save Settings</button>
+                            </div>
+                        </div>
+
+                        <div class="wbc-accordion">
+                            <div class="panel-group ordd-accordian" id="wbc-accordion">
+                                <!-- First Panel -->
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        <h2 class="panel-title" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false">
+                                           Email Setiings
+                                        </h2>
+                                    </div>
+                                    <div id="collapseOne" class="panel-collapse collapse show">
+                                        <div class="panel-body">
+                                            <div class="tbl-mod-1">
+                                                <div class="tm1-row">
+                                                    <div class="col-left">
+                                                        <label> Enable abandoned cart emails:</label>
+                                                    </div>
+                                                    <div class="col-right">
+                                                        <div class="rc-flx-wrap flx-aln-center">
+                                                            <img class="tt-info" src="assets/images/icon-info.svg" alt="Info" data-toggle="tooltip" data-placement="top" title="Tooltip content goes here">
+                                                            <label class="el-switch el-switch-green">
+                                                                <input type="checkbox" name="cb_opt_nm_30" value="cb_opt_val_30" checked>
+                                                                <span class="el-switch-style"></span>
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="tm1-row">
+                                                    <div class="col-left">
+                                                        <label>Email admin On Order Recovery:</label>
+                                                    </div>
+                                                    <div class="col-right">
+                                                        <div class="rc-flx-wrap flx-aln-center">
+                                                            <img class="tt-info" src="assets/images/icon-info.svg" alt="Info" data-toggle="tooltip" data-placement="top" title="Tooltip content goes here">
+                                                            <label class="el-switch el-switch-green">
+                                                                <input type="checkbox" name="cb_opt_nm_22" value="cb_opt_val_22" checked>
+                                                                <span class="el-switch-style"></span>
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="tm1-row">
+                                                    <div class="col-left">
+                                                        <label>Send reminder emails for newly abandoned carts after X days of order placement:</label>
+                                                    </div>
+                                                    <div class="col-right">
+                                                        <div class="rc-flx-wrap flx-aln-center">
+                                                            <img class="tt-info" src="assets/images/icon-info.svg" alt="Info" data-toggle="tooltip" data-placement="top" title="Tooltip content goes here">
+                                                            <input class="ib-md" type="text" name="" placeholder="10" />
+                                                        </div>
+                                                    </div>
+                                                </div>
+            
+                                                <div class="tm1-row flx-center">
+                                                    <div class="col-left">
+                                                        <label>Class Names Of The Form Fields:</label>
+                                                    </div>
+                                                    <div class="col-right">
+                                                        <div class="rc-flx-wrap flx-aln-center">
+                                                            <img class="tt-info" src="assets/images/icon-info.svg" alt="Info" data-toggle="tooltip" data-placement="top" title="Tooltip content goes here">
+                                                            <input class="ib-xl" type="text" name="" placeholder="Class Name 1, Class Name 2, Class Name 3">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                
+                                                <div class="tm1-row">
+                                                    <div class="col-left">
+                                                        <label>
+                                                            Capture email address from custom fields:
+                                                            </label>
+                                                    </div>
+                                                    <div class="col-right">
+                                                        <div class="rc-flx-wrap flx-aln-center">
+                                                            <img class="tt-info" src="assets/images/icon-info.svg" alt="Info" data-toggle="tooltip" data-placement="top" title="Tooltip content goes here">
+                                                            <label class="el-switch el-switch-green">
+                                                                <input type="checkbox" name="cb_opt_nm_21" value="cb_opt_val_21" checked>
+                                                                <span class="el-switch-style"></span>
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+            
+                                                <div class="tm1-row">
+                                                    <div class="col-left">
+                                                        <label>Enable Email Verification::</label>
+                                                    </div>
+                                                    <div class="col-right">
+                                                        <div class="rc-flx-wrap flx-aln-center">
+                                                            <img class="tt-info" src="assets/images/icon-info.svg" alt="Info" data-toggle="tooltip" data-placement="top" title="Tooltip content goes here">
+                                                            <input class="ib-md" type="text" name="" placeholder="" />
+                                                        </div>
+                                                    </div>
+                                                </div>
+            
+                                                <div class="tm1-row">
+                                                    <div class="col-left">
+                                                        <label>
+                                                            Enable abandoned cart emails:</label>
+                                                    </div>
+                                                    <div class="col-right">
+                                                        <div class="rc-flx-wrap flx-aln-center">
+                                                            <img class="tt-info" src="assets/images/icon-info.svg" alt="Info" data-toggle="tooltip" data-placement="top" title="Tooltip content goes here">
+                                                            <label class="el-switch el-switch-green">
+                                                                <input type="checkbox" name="cb_opt_nm_21" value="cb_opt_val_21" checked>
+                                                                <span class="el-switch-style"></span>
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                </div>  
+                                               
+                                                <div class="tm1-row">
+                                                    <div class="col-left">
+                                                        <label>Enter DeBounce API Key:</label>
+                                                    </div>
+                                                    <div class="col-right">
+                                                        <div class="rc-flx-wrap flx-aln-center">
+                                                            <img class="tt-info" src="assets/images/icon-info.svg" alt="Info" data-toggle="tooltip" data-placement="top" title="Tooltip content goes here">
+                                                            <input class="ib-md" type="text" name="" placeholder="Enter DeBounce JS API Key" />
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Second Panel -->
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h2 class="panel-title" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false">
+                                        Cart Settings
+                                    </h2>
+                                </div>
+                                <div id="collapseTwo" class="panel-collapse collapse show">
+                                    <div class="panel-body">
+                                        <div class="tbl-mod-1">
+                                            <div class="tm1-row">
+                                                <div class="col-left">
+                                                    <label>Cart abandoned cut-off time for logged-in users</label>
+                                                </div>
+                                                <div class="col-right">
+                                                    <div class="rc-flx-wrap flx-aln-center">
+                                                        <img class="tt-info" src="assets/images/icon-info.svg" alt="Info" data-toggle="tooltip" data-placement="top" title="Tooltip content goes here">
+                                                        <input class="ib-md" type="text" name="" placeholder="10 minutes" />
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="tm1-row">
+                                                <div class="col-left">
+                                                    <label>Cart abandoned cut-off time for guest users</label>
+                                                </div>
+                                                <div class="col-right">
+                                                    <div class="rc-flx-wrap flx-aln-center">
+                                                        <img class="tt-info" src="assets/images/icon-info.svg" alt="Info" data-toggle="tooltip" data-placement="top" title="Tooltip content goes here">
+                                                        <input class="ib-md" type="text" name="" placeholder="20 minutes" />
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="tm1-row">
+                                                <div class="col-left">
+                                                    <label>
+                                                        Do not track carts of guest users:</label>
+                                                </div>
+                                                <div class="col-right">
+                                                    <div class="rc-flx-wrap flx-aln-center">
+                                                        <img class="tt-info" src="assets/images/icon-info.svg" alt="Info" data-toggle="tooltip" data-placement="top" title="Tooltip content goes here">
+                                                        <label class="el-switch el-switch-green">
+                                                            <input type="checkbox" name="cb_opt_nm_21" value="cb_opt_val_21" checked>
+                                                            <span class="el-switch-style"></span>
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                            </div>  
+
+                                            <div class="tm1-row">
+                                                <div class="col-left">
+                                                    <label>
+                                                        Start tracking from Cart Page:</label>
+                                                </div>
+                                                <div class="col-right">
+                                                    <div class="rc-flx-wrap flx-aln-center">
+                                                        <img class="tt-info" src="assets/images/icon-info.svg" alt="Info" data-toggle="tooltip" data-placement="top" title="Tooltip content goes here">
+                                                        <label class="el-switch el-switch-green">
+                                                            <input type="checkbox" name="cb_opt_nm_21" value="cb_opt_val_21" >
+                                                            <span class="el-switch-style"></span>
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                            </div>  
+
+                                            <div class="tm1-row">
+                                                <div class="col-left">
+                                                    <label>
+                                                        Do not track carts of logged-in users:</label>
+                                                </div>
+                                                <div class="col-right">
+                                                    <div class="rc-flx-wrap flx-aln-center">
+                                                        <img class="tt-info" src="assets/images/icon-info.svg" alt="Info" data-toggle="tooltip" data-placement="top" title="Tooltip content goes here">
+                                                        <label class="el-switch el-switch-green">
+                                                            <input type="checkbox" name="cb_opt_nm_21" value="cb_opt_val_21" checked >
+                                                            <span class="el-switch-style"></span>
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                            </div>  
+
+                                            <div class="tm1-row">
+                                                <div class="col-left">
+                                                    <label>
+                                                    Add Product to Cart when Close Icon is clicked?:</label>
+                                                </div>
+                                                <div class="col-right">
+                                                    <div class="rc-flx-wrap flx-aln-center">
+                                                        <img class="tt-info" src="assets/images/icon-info.svg" alt="Info" data-toggle="tooltip" data-placement="top" title="Tooltip content goes here">
+                                                        <label class="el-switch el-switch-green">
+                                                            <input type="checkbox" name="cb_opt_nm_21" value="cb_opt_val_21" checked >
+                                                            <span class="el-switch-style"></span>
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                            </div>  
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                                <!-- Third Panel -->
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h2 class="panel-title" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false">
+                                        Settings
+                                    </h2>
+                                </div>
+                                <div id="collapseThree" class="panel-collapse collapse show">
+                                    <div class="panel-body">
+                                        <div class="tbl-mod-1">
+                                            <div class="tm1-row">
+                                                <div class="col-left">
+                                                    <label>Automatically Delete Abandoned Orders after X days</label>
+                                                </div>
+                                                <div class="col-right">
+                                                    <div class="rc-flx-wrap flx-aln-center">
+                                                        <img class="tt-info" src="assets/images/icon-info.svg" alt="Info" data-toggle="tooltip" data-placement="top" title="Tooltip content goes here">
+                                                        <input class="ib-md" type="text" name="" placeholder="365" />
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="tm1-row">
+                                                <div class="col-left">
+                                                    <label>
+                                                        Remove Data on Uninstall?:</label>
+                                                </div>
+                                                <div class="col-right">
+                                                    <div class="rc-flx-wrap flx-aln-center">
+                                                        <img class="tt-info" src="assets/images/icon-info.svg" alt="Info" data-toggle="tooltip" data-placement="top" title="Tooltip content goes here">
+                                                        <label class="el-switch el-switch-green">
+                                                            <input type="checkbox" name="cb_opt_nm_21" value="cb_opt_val_21" checked>
+                                                            <span class="el-switch-style"></span>
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                            </div>  
+
+                                            <div class="tm1-row flx-center">
+                                                <div class="col-left">
+                                                    <label>Reset Usage Tracking</label>
+                                                </div>
+                                                <div class="col-right">
+                                                    <div class="row-box-1 flx-center">
+                                                        <div class="rb1-left">
+                                                            <img class="tt-info" src="assets/images/icon-info.svg" alt="Info" style="position: relative; top: -4px;">
+                                                        </div>
+                                                        <div class="rb1-right">
+                                                            <div class="rb1-row">
+                                                                <input class="trietary-btn reverse" type="reset" name="" value="Reset">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--Four Panel -->
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h2 class="panel-title" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false">
+                                       GDPR Consent 
+                                    </h2>
+                                </div>
+                                <div id="collapseFour" class="panel-collapse collapse show">
+                                    <div class="panel-body">
+                                        <div class="tbl-mod-1">
+                                            <div class="tm1-row">
+                                                <div class="col-left">
+                                                    <label>
+                                                        Enable GDPR Notice:</label>
+                                                </div>
+                                                <div class="col-right">
+                                                    <div class="rc-flx-wrap flx-aln-center">
+                                                        <img class="tt-info" src="assets/images/icon-info.svg" alt="Info" data-toggle="tooltip" data-placement="top" title="Tooltip content goes here">
+                                                        <label class="el-switch el-switch-green">
+                                                            <input type="checkbox" name="cb_opt_nm_21" value="cb_opt_val_21" checked>
+                                                            <span class="el-switch-style"></span>
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                            </div>  
+
+                                            <div class="tm1-row">
+                                                <div class="col-left">
+                                                    <label>Message to be displayed for Guest users when tracking their carts:</label>
+                                                </div>
+                                                <div class="col-right">
+                                                    <div class="rc-flx-wrap">
+                                                        <img class="tt-info aw-text" src="assets/images/icon-info.svg" alt="Info">
+                                                        <textarea class="ta-sm" placeholder="Your email address will help us support your shopping experience throughout the site. Please check our Privacy Policy to see how we use your personal data. "></textarea>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="tm1-row">
+                                                <div class="col-left">
+                                                    <label>Message to be displayed for registered users when tracking their carts:</label>
+                                                </div>
+                                                <div class="col-right">
+                                                    <div class="rc-flx-wrap">
+                                                        <img class="tt-info aw-text" src="assets/images/icon-info.svg" alt="Info">
+                                                        <textarea class="ta-sm" placeholder="Please check our Privacy Policy to see how we use your personal data. "></textarea>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="tm1-row">
+                                                <div class="col-left">
+                                                    <label>Allow the visitor to opt out of cart tracking.</label>
+                                                </div>
+                                                <div class="col-right">
+                                                    <div class="rc-flx-wrap flx-aln-center">
+                                                        <img class="tt-info" src="assets/images/icon-info.svg" alt="Info" data-toggle="tooltip" data-placement="top" title="Tooltip content goes here">
+                                                        <input class="ib-md" type="text" name="" placeholder="" />
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="tm1-row">
+                                                <div class="col-left">
+                                                    <label>Message to be displayed when the user chooses to opt out of cart tracking:</label>
+                                                </div>
+                                                <div class="col-right">
+                                                    <div class="rc-flx-wrap">
+                                                        <img class="tt-info aw-text" src="assets/images/icon-info.svg" alt="Info">
+                                                        <textarea class="ta-sm" placeholder="Message to be displayed when the user chooses to opt out of cart tracking. "></textarea>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="tm1-row">
+                                                <div class="col-left">
+                                                    <label>Enable SMS Consent:</label>
+                                                </div>
+                                                <div class="col-right">
+                                                    <div class="rc-flx-wrap flx-aln-center">
+                                                        <img class="tt-info" src="assets/images/icon-info.svg" alt="Info" data-toggle="tooltip" data-placement="top" title="Tooltip content goes here">
+                                                        <label class="el-switch el-switch-green">
+                                                            <input type="checkbox" name="cb_opt_nm_20" value="cb_opt_val_20" checked>
+                                                            <span class="el-switch-style" ></span>
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                               
+                                            <div class="tm1-row">
+                                                <div class="col-left">
+                                                    <label>SMS Consent Message:</label>
+                                                </div>
+                                                <div class="col-right">
+                                                    <div class="rc-flx-wrap">
+                                                        <img class="tt-info aw-text" src="assets/images/icon-info.svg" alt="Info">
+                                                        <textarea class="ta-sm" placeholder="Message to be displayed below the Phone field at Checkout informing users that their phone number and cart data are saved to send abandonment reminders. "></textarea>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--Five Panel -->
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h2 class="panel-title" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false">
+                                       Coupon Settings 
+                                    </h2>
+                                </div>
+                                <div id="collapseFive" class="panel-collapse collapse show">
+                                    <div class="panel-body">
+                                        <div class="tbl-mod-1">
+                                            <div class="tm1-row">
+                                                <div class="col-left">
+                                                    <label> Delete Coupons Automatically:</label>
+                                                </div>
+                                                <div class="col-right">
+                                                    <div class="rc-flx-wrap flx-aln-center">
+                                                        <img class="tt-info" src="assets/images/icon-info.svg" alt="Info" data-toggle="tooltip" data-placement="top" title="Tooltip content goes here">
+                                                        <label class="el-switch el-switch-green">
+                                                            <input type="checkbox" name="cb_opt_nm_21" value="cb_opt_val_21" checked>
+                                                            <span class="el-switch-style"></span>
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                            </div>  
+
+                                            <div class="tm1-row flx-center">
+                                                <div class="col-left">
+                                                    <label>Delete Coupons Manually</label>
+                                                </div>
+                                                <div class="col-right">
+                                                    <div class="row-box-1 flx-center">
+                                                        <div class="rb1-left">
+                                                            <img class="tt-info" src="assets/images/icon-info.svg" alt="Info" style="position: relative; top: -4px;">
+                                                        </div>
+                                                        <div class="rb1-right">
+                                                            <div class="rb1-row">
+                                                                <input class="trietary-btn reverse" type="reset" name="" value="Delete">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div> 
+                            </div>
+                            <!--Six Panel -->
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h2 class="panel-title" data-toggle="collapse" data-target="#collapseSix" aria-expanded="false">
+                                        Setting for sending Emails & SMS using Action Scheduler
+                                    </h2>
+                                </div>
+                                <div id="collapseSix" class="panel-collapse collapse show">
+                                    <div class="panel-body">
+                                        <div class="tbl-mod-1">
+                                            <div class="tm1-row">
+                                                <div class="col-left">
+                                                    <label> Send Abandoned cart reminders automatically using Action Scheduler:</label>
+                                                </div>
+                                                <div class="col-right">
+                                                    <div class="rc-flx-wrap flx-aln-center">
+                                                        <img class="tt-info" src="assets/images/icon-info.svg" alt="Info" data-toggle="tooltip" data-placement="top" title="Tooltip content goes here">
+                                                        <label class="el-switch el-switch-green">
+                                                            <input type="checkbox" name="cb_opt_nm_21" value="cb_opt_val_21" checked>
+                                                            <span class="el-switch-style"></span>
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                            </div>  
+
+                                            <div class="tm1-row">
+                                                <div class="col-left">
+                                                    <label>Run Automated Scheduler after X minutes.</label>
+                                                </div>
+                                                <div class="col-right">
+                                                    <div class="rc-flx-wrap flx-aln-center">
+                                                        <img class="tt-info" src="assets/images/icon-info.svg" alt="Info" data-toggle="tooltip" data-placement="top" title="Tooltip content goes here">
+                                                        <input class="ib-md" type="text" name="" placeholder="2" />
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--Seven Panel -->
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h2 class="panel-title" data-toggle="collapse" data-target="#collapseSeven" aria-expanded="false">
+                                        Rules to exclude capturing abandoned carts
+                                    </h2>
+                                </div>
+                                <div id="collapseSeven" class="panel-collapse collapse show">
+                                    <div class="panel-body">
+                                        <div class="tbl-mod-1">
+                                            <div class="tm1-row">
+                                                <div class="col-left">
+                                                    <label>
+                                                        Do not capture abandoned carts for these IP addresses:</label>
+                                                </div>
+                                                <div class="col-right">
+                                                    <div class="rc-flx-wrap">
+                                                        <img class="tt-info aw-text" src="assets/images/icon-info.svg" alt="Info">
+                                                        <textarea class="ta-sm" placeholder="Add an IP address "></textarea>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="tm1-row">
+                                                <div class="col-left">
+                                                    <label>Do not capture abandoned carts for these email addresses:</label>
+                                                </div>
+                                                <div class="col-right">
+                                                    <div class="rc-flx-wrap">
+                                                        <img class="tt-info aw-text" src="assets/images/icon-info.svg" alt="Info">
+                                                        <textarea class="ta-sm" placeholder=" Add an email address  "></textarea>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="tm1-row">
+                                                <div class="col-left">
+                                                    <label>Do not capture abandoned carts for email addresses from these domains:</label>
+                                                </div>
+                                                <div class="col-right">
+                                                    <div class="rc-flx-wrap">
+                                                        <img class="tt-info aw-text" src="assets/images/icon-info.svg" alt="Info">
+                                                        <textarea class="ta-sm" placeholder="Add an email domain name"></textarea>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--Seven Panel -->
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h2 class="panel-title" data-toggle="collapse" data-target="#collapseSeven" aria-expanded="false">
+                                        Settings for abandoned cart recovery emails
+                                    </h2>
+                                </div>
+                                <div id="collapseSeven" class="panel-collapse collapse show">
+                                    <div class="panel-body">
+                                        <div class="tbl-mod-1">
+                                            <div class="tm1-row">
+                                                <div class="col-left">
+                                                    <label>"From" Name:</label>
+                                                </div>
+                                                <div class="col-right">
+                                                    <div class="rc-flx-wrap flx-aln-center">
+                                                        <img class="tt-info" src="assets/images/icon-info.svg" alt="Info" data-toggle="tooltip" data-placement="top" title="Tooltip content goes here">
+                                                        <input class="ib-md" type="text" name="" placeholder="Admin" />
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="tm1-row">
+                                                <div class="col-left">
+                                                    <label>"From" Address:</label>
+                                                </div>
+                                                <div class="col-right">
+                                                    <div class="rc-flx-wrap flx-aln-center">
+                                                        <img class="tt-info" src="assets/images/icon-info.svg" alt="Info" data-toggle="tooltip" data-placement="top" title="Tooltip content goes here">
+                                                        <input class="ib-md" type="text" name="" placeholder="upendra@tychesoftwares.com" />
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="tm1-row">
+                                                <div class="col-left">
+                                                    <label>Send Reply Emails to:</label>
+                                                </div>
+                                                <div class="col-right">
+                                                    <div class="rc-flx-wrap flx-aln-center">
+                                                        <img class="tt-info" src="assets/images/icon-info.svg" alt="Info" data-toggle="tooltip" data-placement="top" title="Tooltip content goes here">
+                                                        <input class="ib-md" type="text" name="" placeholder="upendra@tychesoftwares.com" />
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            
+                                            <div class="tm1-row">
+                                                <div class="col-left">
+                                                    <label>Product Image:</label>
+                                                </div>
+                                                <div class="col-right">
+                                                    <div class="rc-flx-wrap flx-aln-center">
+                                                        <img class="tt-info" src="assets/images/icon-info.svg" alt="Info" data-toggle="tooltip" data-placement="top" title="Tooltip content goes here">
+                                                        <input class="ib-sm ib-small" type="text" style="width:70px" name="" placeholder="2" />
+                                                        <p> &nbsp; X &nbsp;</p>
+                                                        <input class="ib-sm ib-small" type="text" style="width:70px" name="" placeholder="2" />
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="tm1-row">
+                                                <div class="col-left">
+                                                    <label>Product Name Redirects to:</label>
+                                                </div>
+                                                <div class="col-right">
+                                                    <div class="rc-flx-wrap flx-aln-center">
+                                                        <img class="tt-info" src="assets/images/icon-info.svg" alt="Info" data-toggle="tooltip" data-placement="top" title="Tooltip content goes here">
+                                                        <select class="ib-md">
+                                                            <option>Product Page</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                           
+                                            <div class="tm1-row">
+                                                <div class="col-left">
+                                                    <label>UTM parameters to be added to all the links in reminder emails</label>
+                                                </div>
+                                                <div class="col-right">
+                                                    <div class="rc-flx-wrap flx-aln-center">
+                                                        <img class="tt-info" src="assets/images/icon-info.svg" alt="Info" data-toggle="tooltip" data-placement="top" title="Tooltip content goes here">
+                                                        <input class="ib-md" type="text" name="" placeholder="UTM parameters" />
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div> 
+                            <!-- Eight Panel -->
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h2 class="panel-title" data-toggle="collapse" data-target="#collapseEight" aria-expanded="false">
+                                        Unsubscribe Emails Settings
+                                    </h2>
+                                </div>
+                                <div id="collapseEight" class="panel-collapse collapse show">
+                                    <div class="panel-body">
+                                        <div class="tbl-mod-1">
+                                            <div class="tm1-row">
+                                                <div class="col-left">
+                                                    <label>Unsubscribe Landing Page:</label>
+                                                </div>
+                                                <div class="col-right">
+                                                    <div class="rc-flx-wrap flx-aln-center">
+                                                        <img class="tt-info" src="assets/images/icon-info.svg" alt="Info" data-toggle="tooltip" data-placement="top" title="Tooltip content goes here">
+                                                        <input class="ib-md" type="text" name="" value="Default Unsubscribe Page">
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="tm1-row">
+                                                <div class="col-left">
+                                                    <label>Message:</label>
+                                                </div>
+                                                <div class="col-right">
+                                                    <div class="rc-flx-wrap">
+                                                        <img class="tt-info" src="assets/images/icon-info.svg" alt="Info" data-toggle="tooltip" data-placement="top" title="Tooltip content goes here">
+                                                        <img src="assets/images/editor.png" alt="Editor">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>   
+                            <!-- Nine Panel -->
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h2 class="panel-title" data-toggle="collapse" data-target="#collapseNine" aria-expanded="false">
+                                        Unsubscribe Emails Settings
+                                    </h2>
+                                </div>
+                                <div id="collapseNine" class="panel-collapse collapse show">
+                                    <div class="panel-body">
+                                        <div class="tbl-mod-1">
+                                            <div class="tm1-row">
+                                                <div class="col-left">
+                                                    <label>Unsubscribe Settings:</label>
+                                                </div>
+                                                <div class="col-right">
+                                                    <div class="rc-flx-wrap flx-aln-center">
+                                                        <img class="tt-info" src="assets/images/icon-info.svg" alt="Info" data-toggle="tooltip" data-placement="top" title="Tooltip content goes here">
+                                                        <select class="ib-md">
+                                                            <option>Customer Wordpress Page</option>
+                                                        </select>  
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        
+                                            <div class="tm1-row">
+                                                <div class="col-left">
+                                                    <label>Select Customer Wordpress Page </label>
+                                                </div>
+                                                <div class="col-right">
+                                                    <div class="rc-flx-wrap flx-aln-center">
+                                                        <img class="tt-info" src="assets/images/icon-info.svg" alt="Info" data-toggle="tooltip" data-placement="top" title="Tooltip content goes here">
+                                                        <select id="choices-multiple-remove-button" class="ib-small" placeholder="Select Order Ids" >
+                                                            <option value="Customer Wordpress Page">Customer Wordpress Page 1</option>
+                                                        </select>  
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>  
+                                 </div>
+                            </div>
+                        </div>
+                        <div class="ss-foot">
+                            <button type="button">Save Settings</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Content Area End -->
+
+        <!-- Footer -->
+        <div class="ordd-footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="footer-wrap">
+                            <div class="alert alert-dark alert-dismissible fade show" role="alert">
+                                <img class="msg-icon" src="assets/images/icon-info-grey.svg" alt="Logo" /><a href="#">Get our Subscriptions Addon</a> & setup recurring deliveries with WooCommerce Subscriptions plugin & Order Delivery Date plugin.
+                                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+
+                            <div class="ft-text">
+                                <p><a href="#">Need Support?</a> <strong>We’re always happy to help you.</strong></p>
+                                <p><a href="#">Please rate this plugin</a> <span class="rating">★★★★★</span> if this product helped you. <br>Thanks for your support</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer End -->
+    </div>
+
+    <!-- Optional JavaScript -- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="assets/js/jquery-3.3.1.slim.min.js"></script>
+    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/bootstrap-tokenfield.js"></script>
+    <script src="assets/js/custom.js"></script>
+</body>
+</html>

@@ -1,0 +1,369 @@
+<!doctype html>
+<html lang="en">
+   <head>
+      <!-- Required meta tags -->
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <!-- Bootstrap CSS -->
+      <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+      <link rel="stylesheet" href="assets/css/checkbox.css">
+      <link rel="stylesheet" href="assets/css/bootstrap-tokenfield.css">
+      <link rel="stylesheet" href="assets/css/theme-style.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css">
+      <script src="assets/js/choices.min.js"></script>
+      <title>Reminder Sent</title>
+   </head>
+   <body>
+      <div id="ordd-page" class="ordd-page">
+         <!-- Header -->
+         <div class="ordd-header">
+            <div class="container-fluid">
+               <div class="row">
+                  <div class="col-md-12">
+                     <div class="header-wrap">
+                        <div class="branding">
+                           <a href=""><img src="assets/images/ordd-logo.svg" alt="Logo" /></a>
+                        </div>
+                        <nav class="navbar navbar-expand-lg navbar-light ordd-navigation">
+                           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                              <span class="navbar-toggler-icon">
+                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                                    <path fill="none" d="M0 0h24v24H0z"/>
+                                    <path d="M3 4h18v2H3V4zm0 7h12v2H3v-2zm0 7h18v2H3v-2z" fill="rgba(255,255,255,1)"/>
+                                 </svg>
+                              </span>
+                           </button>
+                           <div class="collapse navbar-collapse" id="navbarNav">
+                              <ul class="navbar-nav menu nav-menu">
+                                 <li class="nav-item"><a class="nav-link" href="index.html">Dashboard</a></li>
+                                 <li class="nav-item"><a class="nav-link" href="order.html">Abandoned Orders</a></li>
+                                 <li class="nav-item"><a class="nav-link" href="email-template1.html">Templates</a></li>
+                                 <li class="nav-item"><a class="nav-link" href="settings-general.html">Settings</a></li>
+                                 <li class="nav-item active"><a class="nav-link" href="reminder-sent-email.html">Reminder Sent</a></li>
+                                <li class="nav-item"><a class="nav-link" href="product-report.html">Product Report</a></li>
+                                 <li class="nav-item"><a class="nav-link" href="faq&support.html">FAQ & Support</a></li>
+                              </ul>
+                           </div>
+                        </nav>
+                        <div class="ordd-version">
+                           <p class="ver-fig">Abandoned Cart</p>
+                           <p class="ver-fig">Version 5.7.2</p>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <!-- Header End -->
+         <!-- Content Area -->
+         <div class="ordd-content-area">
+            <div class="container cw-full secondary-nav">
+               <div class="row">
+                  <div class="col-md-12">
+                     <!-- Secondary Navigation -->
+                     <div class="secondary-nav-wrap">
+                        <ul>
+                           <li><a href="reminder-sent-email.html">Emails Sent</a></li>
+                           <li><a href="reminder-sent-sms.html">SMS Sent</a></li>
+                        </ul>
+                     </div>
+                     <!-- Secondary Navigation - End -->
+                  </div>
+               </div>
+            </div>
+         <div class="ordd-content-area">
+            <div class="container fas-page-wrap ordd-page-head pb-0">
+               <div class="row">
+                  <div class="col-md-12">
+                     <div class="tm1-row bdr-0 pt-0 delvry-sch-bottom mb-4">
+                        <div class="abulk-box pt-0 ">
+                           <p class="mb-0">The Report below shows emails sent, emails opened and other related stats for the selected date range</p>
+                        </div>
+                     </div>
+                     <div class="tm1-row bdr-0 pt-0 delvry-sch-bottom mb-4">
+                        <div class="abulk-box d-flex pt-0">
+                           
+                           <div class="col-box">
+                              <select class="ib-small">
+                                 <option>Select Days</option>
+                                 <option>15 Days</option>
+                              </select>
+                              <select class="ib-small">
+                                 <option>Start Date</option>
+                                 <option>20/10/2022</option>
+                              </select>
+                              <select class="ib-small">
+                                 <option>End Date</option>
+                                 <option>23/10/2022</option>
+                              </select>
+                              <button class="trietary-btn reverse" type="button">Apply Filter</button>
+                           </div>
+                        </div>
+                        <div class="action-url">
+                           <button class="trietary-btn reverse" type="button">Email Sent: 12</button>
+                           <button class="trietary-btn reverse" type="button">Email Opened: 01</button>
+                           <button class="trietary-btn reverse" type="button">Links Clicked: 10</button>
+                        </div>
+                     </div>
+                     <div class="tbl-mod-1">
+                        <div class="custom-integrations">
+                           <div class="bts-content">
+                              <div class="tbl-mod-2 flx-100">
+                                 <div class="tm2-inner-wrap tbl-responsive">
+                                    <table class="for-action" style="display: none;">
+                                       <tbody>
+                                          <tr>
+                                             <td>
+                                                <button type="button" class="btn btn-outline-primary blue-button btn-sm add-new">Save Setting</button>
+                                                <a class="edit-delvry-sche edit" data-toggle="collapse" href="#" id="action-edit" role="button" aria-expanded="false" aria-controls="collapseExample" style="display: none;"> Edit</a>
+                                                <!-- <a class="enable" title="Enable" style="display: none;">Enable</a> --> <a class="delete ml-2" title="Enable"><i class="fas fa-trash"></i></a>
+                                             </td>
+                                          </tr>
+                                       </tbody>
+                                    </table>
+                                    <table class="table">
+                                       <thead>
+                                          <tr>
+                                             <th>User Email Address</th>
+                                             <th>Email Sent Time</th>
+                                             <th>Date / Time Email Opened</th>
+                                             <th>Link Clicked</th>
+                                             <th>Sent Email Template</th>
+                                          </tr>
+                                       </thead>
+                                       <tbody>
+                                          <tr class="cloned-row">
+                                             <td>Upendra@tychesoftwares.com
+                                             <div class="edit-action">
+                                                <a class="red-text" href="">Recovered Order</a> 
+                                             </div>
+                                             </td>
+                                             <td>April 15,2022  |  10:10 </td>
+                                             <td>April 15,2022  |  10:10 </td>
+                                             <td>05</td>
+                                             <td>Initial</td>
+                                          </tr>
+                                          <tr class="cloned-row">
+                                             <td>Upen09@tychesoftwares.com
+                                                <div class="edit-action">
+                                                   <a class="red-text" href="">Recovered Order</a> 
+                                                </div>
+                                                </td>
+                                                <td>April 13,2022  |  16:55 </td>
+                                                <td>April 13,2022  |  16:55 </td>
+                                                <td>10</td>
+                                                <td>Initial - LITE</td>
+                                          </tr>
+                                          <tr class="cloned-row">
+                                             <td>Upendra@tychesoftwares.com
+                                                <div class="edit-action">
+                                                   <a class="red-text" href="">Recovered Order</a> 
+                                                </div>
+                                                </td>
+                                                <td>April 25,2022  |  09:10 </td>
+                                                <td>April 25,2022  |  09:10 </td>
+                                                <td>01</td>
+                                                <td>Initial</td>
+                                          </tr>
+                                          <tr class="cloned-row">
+                                             <td>Upen09@tychesoftwares.com
+                                                <div class="edit-action">
+                                                   <a class="red-text" href="">Recovered Order</a> 
+                                                </div>
+                                                </td>
+                                                <td>April 05,2022  |  14:05 </td>
+                                                <td>April 05,2022  |  14:05 </td>
+                                                <td>13</td>
+                                                <td>Initial</td>
+                                          </tr>
+                                          <tr class="cloned-row">
+                                             <td>Upendra@tychesoftwares.com
+                                                <div class="edit-action">
+                                                   <a class="red-text" href="">Recovered Order</a> 
+                                                </div>
+                                                </td>
+                                                <td>April 23,2022  |  11:10 </td>
+                                                <td>April 23,2022  |  11:10 </td>
+                                                <td>21</td>
+                                                <td>Initial</td>
+                                          </tr>
+                                       </tbody>
+                                       <thead>
+                                          <tr>
+                                             <th>User Email Address</th>
+                                             <th>Email Sent Time</th>
+                                             <th>Date / Time Email Opened</th>
+                                             <th>Link Clicked</th>
+                                             <th>Sent Email Template</th>
+                                          </tr>
+                                       </thead>
+                                    </table>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <!-- Content Area End -->
+         <!-- Footer -->
+         <div class="ordd-footer">
+            <div class="container">
+               <div class="row">
+                  <div class="col-md-12">
+                     <div class="footer-wrap">
+                        <div class="ft-text">
+                           <p><a href="#">Need Support?</a> <strong>We’re always happy to help you.</strong></p>
+                           <p><a href="#">Please rate this plugin</a> <span class="rating">★★★★★</span> if this product helped you. <br>Thanks for your support</p>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <!-- Footer End -->
+      </div>
+      <!-- Modal -->
+      <div class="modal fade cart1-box" id="cart-1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+         <div class="modal-dialog modal-dialog-centered  modal-lg" role="document">
+            <div class="modal-content">
+               <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">Cart #27</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                  </button>
+               </div>
+               <div class="modal-body">
+                  <div class="custom-popup">
+                     <div class="tbl-mod-1">
+                        <div class="tm1-row">
+                           <div class="col-left">
+                              <label>Mark as Recovered:</label>
+                           </div>
+                           <div class="col-right">
+                              <div class="row-box-1">
+                                 <div class="rb1-right">
+                                    <div class="rb-col">
+                                       <div class="radio-box d-block mb-2">
+                                          <div class="custom-control custom-radio custom-control-inline">
+                                             <input type="radio" id="customRadioInline1" name="customRadioInline1" class="custom-control-input">
+                                             <label class="custom-control-label" for="customRadioInline1">Create a WooCommerce Order against which the cart will be marked as recovered.</label>
+                                          </div>
+                                       </div>
+                                       <div class="radio-box d-block">
+                                          <div class="custom-control custom-radio custom-control-inline">
+                                             <input type="radio" id="customRadioInline2" name="customRadioInline1" class="custom-control-input">
+                                             <label class="custom-control-label" for="customRadioInline2">Create a WooCommerce Order against which the cart will be marked as recovered.</label>
+                                          </div>
+                                       </div>
+                                    </div>
+                                    <div class="rb-col pl-4 mt-3">
+                                       <input class="ib-md" type="text" name="" placeholder="Please enter a valid ID">
+                                       <a class="ml-2" href="">Search</a>
+                                    </div>
+                                    <p class="pl-4 mt-2 mb-3">WooCommerce orders can be found <a href="">here.</a></p>
+                                    <div class="mark-btn pl-4">
+                                       <button class="trietary-btn reverse">Mark as Recovered</button>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- Modal -->
+      <div class="modal fade" id="cart-2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+         <div class="modal-dialog modal-dialog-centered  modal-lg" role="document">
+            <div class="modal-content">
+               <div class="modal-header">
+                  <h5 class="modal-title d-flex" id="exampleModalLabel">
+                     Cart #27 <span class="label-tag">Recovered</span>
+                     <p class="mb-0">Recovered on April 18, 2022 10:18</p>
+                  </h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                  </button>
+               </div>
+               <div class="modal-body">
+                  <div class="custom-popup">
+                     <div class="cart-top border-bottom pb-1">
+                        <h4>Customer Details  |  Order <a href="">#1158</a></h4>
+                     </div>
+                     <div class="product-address d-flex justify-content-between pt-4">
+                        <div class="product-box">
+                           <p class="mb-2">Hi, John Doe</p>
+                           <p class="mb-2"><b>Email:</b> johndoe@gmail.com</p>
+                           <p class="mb-2"><b>Billing Address:</b> Shipping Address same as Billing Address</p>
+                           <p class="mb-2"><b>Abandoned Date:</b> April 15, 2022 09:40</p>
+                        </div>
+                        <div class="product-box">
+                           <p class="mb-2"><b>Shipping Method:</b> Free shipping
+                           <p class="mb-2"><b>Shipping Charges:</b> $0.00</p>
+                           <p class="mb-2"><b>IP Address:</b> 103.247.6.199</p>
+                        </div>
+                     </div>
+                     <div class="cart-table">
+                        <div class="table-responsive">
+                           <table>
+                              <thead>
+                                 <tr>
+                                    <th>Products</th>
+                                    <th>Item Quantity</th>
+                                    <th>Item Cost</th>
+                                 </tr>
+                              </thead>
+                              <tbody>
+                                 <tr>
+                                    <td>
+                                       <p class="mb-1"><a href="">Hoodie with Logo</a></p>
+                                       <p class="mb-0">SKU: Hoodie with logo</p>
+                                    </td>
+                                    <td>1 item</td>
+                                    <td>$45.00</td>
+                                 </tr>
+                                 <tr>
+                                    <td>
+                                       <p class="mb-1"><a href="">Hoodie with Logo</a></p>
+                                       <p class="mb-0">SKU: Hoodie with logo</p>
+                                    </td>
+                                    <td>1 item</td>
+                                    <td>$45.00</td>
+                                 </tr>
+                                 <tr style="background-color: #F2F2F2;">
+                                    <td colspan="2">
+                                       <h3 class="mb-1">Order Total:</h3>
+                                       <p class="mb-0">(3 items)</p>
+                                    </td>
+                                    <td>
+                                       <h3 class="mb-0">$155.00</h3>
+                                    </td>
+                                 </tr>
+                              </tbody>
+                           </table>
+                        </div>
+                     </div>
+                     <p class="mb-2">Email template Initial was sent to upen09@gmail.com on April 15, 2022 10:06</p>
+                     <p class="mb-2">Email template Initial - LITE was sent to upen09@gmail.com on April 15, 2022 09:44</p>
+                     <p class="mb-0">Email template Test Template was sent to upen09@gmail.com on April 15, 2022 10:10</p>
+                     <div class="popup-btn mt-3">
+                        <button type="button" class="trietary-btn reverse" data-dismiss="modal">Close</button>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- Optional JavaScript -- jQuery first, then Popper.js, then Bootstrap JS -->
+      <script src="assets/js/jquery-3.3.1.slim.min.js"></script>
+      <script src="assets/js/popper.min.js"></script>
+      <script src="assets/js/bootstrap.min.js"></script>
+      <script src="assets/js/bootstrap-tokenfield.js"></script>
+      <script src="assets/js/custom.js"></script>
+   </body>
+</html>

@@ -1,0 +1,332 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/checkbox.css">
+    <link rel="stylesheet" href="assets/css/bootstrap-tokenfield.css">
+    <link rel="stylesheet" href="assets/css/theme-style.css">
+    <title>ORDD - Frequently Asked Questions</title>
+</head>
+<body>
+    <div id="ordd-page" class="ordd-page">
+
+        <!-- Header -->
+        <div class="ordd-header">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="header-wrap">
+                            <div class="branding">
+                                <a href=""><img src="assets/images/ordd-logo.svg" alt="Logo" /></a>
+                            </div>
+
+                            <nav class="navbar navbar-expand-lg navbar-light ordd-navigation">
+                                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path fill="none" d="M0 0h24v24H0z"/><path d="M3 4h18v2H3V4zm0 7h12v2H3v-2zm0 7h18v2H3v-2z" fill="rgba(255,255,255,1)"/></svg>
+                                </span>
+                                </button>
+                                <div class="collapse navbar-collapse" id="navbarNav">
+                                    <ul class="navbar-nav menu nav-menu">
+                                       <li class="nav-item"><a class="nav-link" href="index.html">Dashboard</a></li>
+                                       <li class="nav-item"><a class="nav-link" href="order.html">Abandoned Orders</a></li>
+                                       <li><a class="nav-link" href="email-template1.html">Templates</a></li>
+                                       <li class="nav-item"><a class="nav-link" href="popup-template.html">Settings</a></li>
+                                       <li class="nav-item"><a class="nav-link" href="">Reminder Sent</a></li>
+                                       <li class="nav-item"><a class="nav-link" href="">Product Report</a></li>
+                                       <li class="nav-item active"><a class="nav-link" href="">FAQ & Support</a></li>
+                                    </ul>
+                                 </div>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Header End -->
+
+        <!-- Content Area -->
+        
+            <div class="container ordd-faq-page">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="wbc-box">
+                            <div class="wbc-head">
+                                <h2>Frequently Asked Questions</h2>
+                            </div>
+                            <div class="wbc-content">
+                                <div class="ordd-faq-wrap">
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <div class="ordd-wc-accordian">
+                                                <div class="panel-group ordd-accordian" id="accordion">
+                                                    <!-- First Panel -->
+                                                    <div class="panel panel-default">
+                                                        <div class="panel-heading">
+                                                            <h4 class="panel-title" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false">
+                                                                When Would a customer's cart be considered as abandoned?
+                                                        </div>
+                                                        <div id="collapseOne" class="panel-collapse collapse">
+                                                            <div class="panel-body">
+                                                                <p>Our plugin considers the cart as abandoned when the user adds a product to the shopping cart but leaves the website without completing the purchase. The cart is considered as abandoned as soon as the cut-off time has passed since adding the product to the cart.
+
+                                                                    For guest users, the user’s email will be captured once the email address is entered in the Add to cart popup modal (if the Add to cart popup modal is enabled). If the Add to cart popup modal is disabled then the user’s email and other details like first name, last name & phone number will be captured only when the guest user reaches the checkout page and enters it.</p>
+                                                                <p>
+                                                                    <a class="link-wul" href="#">Documentation</a>
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <!-- Second Panel -->
+                                                    <div class="panel panel-default">
+                                                        <div class="panel-heading">
+                                                            <h4 class="panel-title" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false">
+                                                                I have a few abandoned carts. But why is the abandoned cart email not sent to those customers?
+                                                            </h4>
+                                                        </div>
+                                                        <div id="collapseTwo" class="panel-collapse collapse">
+                                                            <div class="panel-body">
+                                                                <p>There are several reasons abandoned cart reminder emails not being sent from your website. First, make sure the setting "Enable abandoned cart emails" located at Abandoned Carts > Settings and the email templates of our plugin are enabled. Also, the setting "Send Abandoned cart reminders automatically using Action Scheduler" needs to be enabled to send the reminder emails automatically using the action scheduler.
+
+                                                                    Our plugin relies on the action scheduler library which is present in the WooCommerce to send reminder emails. This action scheduler library needs the WP-Cron enabled. If the WP-Cron is disabled, the scheduler actions will run only when an admin page request occurs. If the WP-Cron is enabled but still, not working then it could be possible that your server has some restrictions which do not allow WP-Cron to run. You can refer to this post for fixing the WP-Cron issue.</p>
+                                                                <p>
+                                                                    <a class="link-wul" href="#">Documentation</a>
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <!-- Third Panel -->
+                                                    <div class="panel panel-default">
+                                                        <div class="panel-heading">
+                                                            <h4 class="panel-title" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false">
+                                                                Reminder emails are shown as sent in the "Reminders Sent" tab but why I or my customers are not receving them?
+                                                            </h4>
+                                                        </div>
+                                                        <div id="collapseThree" class="panel-collapse collapse">
+                                                            <div class="panel-body">
+                                                                <p>If you see the emails under the "Reminders Sent" tab but if they are still not being received to your mail Inbox then you can check once the Spam folder of your email account. If the email is not in the Spam then it’s likely a problem with your email server. You can contact your web host regarding this.</p>
+                                                                <p>
+                                                                    <a class="link-wul" href="#">Documentation</a>
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <!-- Fourth Panel -->
+                                                    <div class="panel panel-default">
+                                                        <div class="panel-heading">
+                                                            <h4 class="panel-title" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false">
+                                                                How can i offer discount codes to customers in the abandoned cart reminder emails?
+                                                            </h4>
+                                                        </div>
+                                                        <div id="collapseFour" class="panel-collapse collapse">
+                                                            <div class="panel-body">
+                                                                <p>When you add or edit an email template, it has a setting "Enter coupon code to add into email" where you can enter a coupon code that you have created from WooCommerce > Coupons page. You would also need to add the {{coupon.code}} merge tag in the Body section of the template. This will send the same coupon code in the reminder emails.
+
+                                                                    If you want to send a unique coupon code to each customer, then you need to enable the "Generate unique coupon codes" setting. You can set up the corresponding settings for the unique coupon code there. You can learn more about the coupon code settings here.</p>
+                                                                <p>
+                                                                    <a class="link-wul" href="#">Documentation</a>
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <!-- Fifth Panel -->
+                                                    <div class="panel panel-default">
+                                                        <div class="panel-heading">
+                                                            <h4 class="panel-title" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false">
+                                                                When the abandoned cart is considered as recovered?
+                                                            </h4>
+                                                        </div>
+                                                        <div id="collapseFive" class="panel-collapse collapse">
+                                                            <div class="panel-body">
+                                                                <p>Our plugin considers the abandoned cart as recovered when the customer comes to the site via accessing the cart/checkout link provided in the abandoned cart reminders (emails, SMS & FB) and purchases the product.</p>
+                                                                <p>
+                                                                    <a class="link-wul" href="#">Documentation</a>
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <!-- Sixth Panel -->
+                                                    <div class="panel panel-default">
+                                                        <div class="panel-heading">
+                                                            <h4 class="panel-title" data-toggle="collapse" data-target="#collapseSix" aria-expanded="false">
+                                                                What would happen when an abandoned order is recovered?
+                                                            </h4>
+                                                        </div>
+                                                        <div id="collapseSix" class="panel-collapse collapse">
+                                                            <div class="panel-body">
+                                                                <p>When an order is recovered, we do change the order status from Abandoned to Recovered and the Recovered order status is showing in green on the Abandoned Orders tab. Our plugin does not send further abandoned cart reminder emails to the users who recovered their carts.</p>
+                                                                <p>
+                                                                    <a class="link-wul" href="#">Documentation</a>
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-md-6">
+                                            <div class="ordd-wc-accordian">
+                                                <div class="panel-group ordd-accordian" id="accordion">
+                                                    <!-- Seventh Panel -->
+                                                    <div class="panel panel-default">
+                                                        <div class="panel-heading">
+                                                            <h4 class="panel-title" data-toggle="collapse" data-target="#collapseSeven" aria-expanded="false">
+                                                                Can i know which customers have recieved the email or which email has been sent?
+                                                            </h4>
+                                                        </div>
+                                                        <div id="collapseSeven" class="panel-collapse collapse">
+                                                            <div class="panel-body">
+                                                                <p>Yes, you can see which email templates are sent and to whom it has sent in the "Reminders Sent" tab of our plugin. You can view which customers have opened the email and clicked on the cart/checkout link.
+                                                                Also, our plugin shows the Abandoned Cart details popup modal on the Abandoned Orders tab where you can see whether the email template is sent and the customer has opened/clicked the email link or not.</p>
+                                                                <p>
+                                                                    <a class="link-wul" href="#">Documentation</a>
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <!-- Eighth Panel -->
+                                                    <div class="panel panel-default">
+                                                        <div class="panel-heading">
+                                                            <h4 class="panel-title" data-toggle="collapse" data-target="#collapseEight" aria-expanded="false">
+                                                                How does the abandoned car plugin send out the cart recovery emails? Do i need a special setup?
+                                                            </h4>
+                                                        </div>
+                                                        <div id="collapseEight" class="panel-collapse collapse">
+                                                            <div class="panel-body">
+                                                                <p>Our plugin uses the Action Scheduler Library to send the abandoned cart reminder emails automatically. This will reduce the dependency on the WP Cron and this does not require a special setup. The email sending is done every 15 minutes.
+
+                                                                    If you want, you can change this interval from the "Run Automated Scheduler after X minutes" under the "Setting for sending Emails & SMS using Action Scheduler" section in the Settings tab. You can check out more about the Action Scheduler here.</p>
+                                                                <p>
+                                                                    <a class="link-wul" href="#">Documentation</a>
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <!-- Ninth Panel -->
+                                                    <div class="panel panel-default">
+                                                        <div class="panel-heading">
+                                                            <h4 class="panel-title" data-toggle="collapse" data-target="#collapseNine" aria-expanded="false">
+                                                                Why i am receiving only the manual reminder emails, not the automatic reminder emails?
+                                                            </h4>
+                                                        </div>
+                                                        <div id="collapseNine" class="panel-collapse collapse">
+                                                            <div class="panel-body">
+                                                                <p>The setting "Send Abandoned cart reminders automatically using Action Scheduler" located at Abandoned Carts > Settings > General needs to be enabled to send the reminder emails automatically as per the set time.</p>
+                                                                <p>
+                                                                    <a class="link-wul" href="#">Documentation</a>
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <!-- Tenth Panel -->
+                                                    <div class="panel panel-default">
+                                                        <div class="panel-heading">
+                                                            <h4 class="panel-title" data-toggle="collapse" data-target="#collapseTen" aria-expanded="false">
+                                                                can i capture the customer's email from the custom email field and send them a cart reminder email?
+                                                            </h4>
+                                                        </div>
+                                                        <div id="collapseTen" class="panel-collapse collapse">
+                                                            <div class="panel-body">
+                                                                <p>Yes, this is possible to achieve with our Pro plugin. We have a setting "Capture email address from custom fields" which you can enable and add the class of the custom email field in the option "Class names of the form fields" located at Abandoned Carts’ General Settings page. This will capture the user’s email entered into the custom email field and then send a cart reminder email.
+
+                                                                    You can learn more about this feature here.</p>
+                                                                <p>
+                                                                    <a class="link-wul" href="#">Documentation</a>
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <!-- Eleveth Panel -->
+                                                    <div class="panel panel-default">
+                                                        <div class="panel-heading">
+                                                            <h4 class="panel-title" data-toggle="collapse" data-target="#collapseEleven" aria-expanded="false">
+                                                                Can I send abandoned cart reminder emails to the store admin as well?
+                                                            </h4>
+                                                        </div>
+                                                        <div id="collapseEleven" class="panel-collapse collapse">
+                                                            <div class="panel-body">
+                                                                <p>Yes, you can send the reminder email to customers, admin, both - customers and admin, and others using the Rules engine we provide in the email template.</p>
+                                                                <p>
+                                                                    <a class="link-wul" href="#">Documentation</a>
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <!-- Twelth Panel -->
+                                                    <div class="panel panel-default">
+                                                        <div class="panel-heading">
+                                                            <h4 class="panel-title" data-toggle="collapse" data-target="#collapseTwelve" aria-expanded="false">
+                                                                The test emails have wrong or dummy data. Is it supposed t work this way?
+                                                            </h4>
+                                                        </div>
+                                                        <div id="collapseTwelve" class="panel-collapse collapse">
+                                                            <div class="panel-body">
+                                                                <p>Yes, we send the dummy data in our test email. We don’t have actual data to add in the test email hence we display the customer’s name as John, two dummy products, coupon code as TESTCOUPON etc. However, when the actual abandon cart recovery emails are sent out, these merge tags will be replaced with the customer’s cart data.</p>
+                                                                <p>
+                                                                    <a class="link-wul" href="#">Documentation</a>
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Content Area End -->
+
+        <!-- Footer -->
+        <div class="ordd-footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="footer-wrap">
+                            <div class="alert alert-dark alert-dismissible fade show" role="alert">
+                                <img class="msg-icon" src="assets/images/icon-info-grey.svg" alt="Logo" /><a href="#">Get our Subscriptions Addon</a> & setup recurring deliveries with WooCommerce Subscriptions plugin & Order Delivery Date plugin.
+                                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+
+                            <div class="ft-text">
+                                <p><a href="#">Need Support?</a> <strong>We’re always happy to help you.</strong></p>
+                                <p><a href="#">Please rate this plugin</a> <span class="rating">★★★★★</span> if this product helped you. <br>Thanks for your support</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer End -->
+    </div>
+
+    
+    <!-- Optional JavaScript -- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="assets/js/jquery-3.3.1.slim.min.js"></script>
+    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/bootstrap-tokenfield.js"></script>
+    <script src="assets/js/custom.js"></script>
+</body>
+</html>
