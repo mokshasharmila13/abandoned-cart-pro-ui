@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="en">
+   <head>
+      <!-- Required meta tags -->
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <!-- Bootstrap CSS -->
+      <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+      <link rel="stylesheet" href="assets/css/checkbox.css">
+      <link rel="stylesheet" href="assets/css/bootstrap-tokenfield.css">
+      <link rel="stylesheet" href="assets/css/theme-style.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css">
+      <script src="assets/js/choices.min.js"></script>
+      <title>Add/Edit Email Template</title>
+   </head>
+   <body>
+      <div id="ordd-page" class="ordd-page">
+         <!-- Header -->
+         <div class="ordd-header">
+            <div class="container-fluid">
+               <div class="row">
+                  <div class="col-md-12">
+                     <div class="header-wrap">
+                        <div class="branding">
+                           <a href=""><img src="assets/images/ordd-logo.svg" alt="Logo" /></a>
+                        </div>
+                        <nav class="navbar navbar-expand-lg navbar-light ordd-navigation">
+                           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                              <span class="navbar-toggler-icon">
+                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                                    <path fill="none" d="M0 0h24v24H0z"/>
+                                    <path d="M3 4h18v2H3V4zm0 7h12v2H3v-2zm0 7h18v2H3v-2z" fill="rgba(255,255,255,1)"/>
+                                 </svg>
+                              </span>
+                           </button>
+                           <div class="collapse navbar-collapse" id="navbarNav">
+                              <ul class="navbar-nav menu nav-menu">
+                                 <li class="nav-item"><a class="nav-link" href="index.html">Dashboard</a></li>
+                                 <li class="nav-item"><a class="nav-link" href="order.html">Abandoned Orders</a></li>
+                                 <li class="nav-item active"><a class="nav-link" href="add-edit-template.html">Templates</a></li>
+                                 <li class="nav-item"><a class="nav-link" href="settings-general.html">Settings</a></li>
+                                 <li class="nav-item "><a class="nav-link" href="reminder-sent-email.html">Reminder Sent</a></li>
+                                <li class="nav-item"><a class="nav-link" href="product-report.html">Product Report</a></li>
+                                 <li class="nav-item"><a class="nav-link" href="faq&support.html">FAQ & Support</a></li>
+                              </ul>
+                           </div>
+                        </nav>
+                        <div class="ordd-version">
+                           <p class="ver-fig">Abandoned Cart</p>
+                           <p class="ver-fig">Version 5.7.2</p>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <!-- Header End -->
+         <!-- Content Area -->
+         <div class="ordd-content-area">
+            <div class="container fas-page-wrap ordd-page-head pb-0">
+               <div class="row">
+                  <div class="col-md-12">
+                     <div class="tm1-row bdr-0 pt-0 delvry-sch-bottom mb-4">
+                        <div class="abulk-box d-flex pt-0">
+                           
+                           <div class="col-box">
+                              <h2>Add/Edit Email Template</h2>
+                              <p>Add/Edit Email Template goes here...</p>
+                           </div>
+                        </div>
+                        <div class="action-url">
+                           <button type="button">Save Settings</button>
+                        </div>
+                     </div>
+                     <div class="tbl-mod-1">
+                        <div class="custom-integrations">
+                           <div class="bts-content">
+                              <div class="tbl-mod-2 flx-100">
+                                 <div class="tm2-inner-wrap tbl-responsive">
+                                    <div class="obp-content">
+                                       <div class="wbc-box">
+                                           <div class="wbc-head">
+                                               <h2>Step 1: Set Email Rules</h2>
+                                           </div>
+                                           <div class="wbc-content">
+                                               <div class="tbl-mod-1">
+                                                   <div class="tm1-row">
+                                                      <div class="col-left">
+                                                         <label>Match Rules:</label>
+                                                      </div>
+                                                      <div class="col-right">
+                                                         <div class="rc-flx-wrap flx-aln-center">
+                                                            <img class="tt-info" src="assets/images/icon-info.svg" alt="Info" data-toggle="tooltip" data-placement="top" title="Tooltip content goes here">
+                                                            <select class="ib-md">
+                                                                  <option>Match all rules</option>
+                                                                  <option>Match any rules</option>
+                                                            </select>
+                                                         </div>
+                                                      </div>
+                                                   </div>
+
+                                                   <div class="tm1-row">
+                                                      <div class="col-left">
+                                                         <label>Rules:</label>
+                                                      </div>
+                                                   </div>
+                                                   <table class="table">
+                                                      <thead>
+                                                         <tr>
+                                                            <th>Rules Type</th>
+                                                            <th>Conditions</th>
+                                                            <th>Values</th>
+                                                            <th>Actions</th>
+                                                         </tr>
+                                                      </thead>
+                                                      <tbody>
+                                                         <tr class="cloned-row">
+                                                            <td><select class="ib-md"><option>Coupons</option></select></td>
+                                                            <td><select class="ib-md"><option>Includes any of</option></select></td>
+                                                            <td><select class="ib-md"><option>Search for Coupon</option></select></td>
+                                                            <td>
+                                                               <a class="delete" title="Delete" data-toggle="tooltip">Delete</a>
+                                                            </td>
+                                                         </tr>
+                                                         <tr class="cloned-row">
+                                                            <td><select class="ib-md"><option>Send Emails Of</option></select></td>
+                                                            <td><select class="ib-md"><option>Excludes any of</option></select></td>
+                                                            <td><select class="ib-md"><option>Search for Coupon</option></select></td>
+                                                            <td>
+                                                               <a class="delete" title="Delete" data-toggle="tooltip">Delete</a>
+                                                            </td>
+                                                         </tr>
+                                                      </tbody>
+                                                   </table>
+                                                   </div>
+                                                   <div class="add-more-link">
+                                                      <a class="al-link add_new_template_range" id="add_product_availability"><img src="assets/images/icon-plus.svg" alt="Icon" /> Add Rule</a>
+                                                   </div>
+                                                </div>
+                                             </div>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        <div class="rb1-row flx-center">
+                        <div class="rb-col">
+                           <a href="#" style="margin-top:24px!important;" class="btn btn-success pl-ss-btn mb-4" >Save &amp; Add/Edit Email Template <i class="fas fa-chevron-right"></i></a>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+         <!-- Content Area End -->
+
+      <!-- Optional JavaScript -- jQuery first, then Popper.js, then Bootstrap JS -->
+      <script src="assets/js/jquery-3.3.1.slim.min.js"></script>
+      <script src="assets/js/popper.min.js"></script>
+      <script src="assets/js/bootstrap.min.js"></script>
+      <script src="assets/js/bootstrap-tokenfield.js"></script>
+      <script src="assets/js/custom.js"></script>
+   </body>
+</html>
