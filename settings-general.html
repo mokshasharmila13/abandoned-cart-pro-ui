@@ -34,7 +34,7 @@
                                     <ul class="navbar-nav menu nav-menu">
                                         <li class="nav-item"><a class="nav-link" href="index.html">Dashboard</a></li>
                                         <li class="nav-item"><a class="nav-link" href="order.html">Abandoned Orders</a></li>
-                                        <li class="nav-item"><a class="nav-link" href="email-template1.html">Templates</a></li>
+                                                                      <li class="nav-item"><a class="nav-link" href="add-edit-template.html">Templates</a></li>
                                         <li class="nav-item active"><a class="nav-link" href="settings-general.html">Settings</a></li>
                                         <li class="nav-item"><a class="nav-link" href="reminder-sent-email.html">Reminder Sent</a></li>
                                        <li class="nav-item"><a class="nav-link" href="product-report.html">Product Report</a></li>
@@ -83,9 +83,7 @@
                                 <h1>General</h1>
                                 <p>General descriptions goes here.</p>
                             </div>
-                            <div class="col-right">
-                                <button type="button">Save Settings</button>
-                            </div>
+                           
                         </div>
 
                         <div class="wbc-accordion">
@@ -141,18 +139,6 @@
                                                     </div>
                                                 </div>
             
-                                                <div class="tm1-row flx-center">
-                                                    <div class="col-left">
-                                                        <label>Class Names Of The Form Fields:</label>
-                                                    </div>
-                                                    <div class="col-right">
-                                                        <div class="rc-flx-wrap flx-aln-center">
-                                                            <img class="tt-info" src="assets/images/icon-info.svg" alt="Info" data-toggle="tooltip" data-placement="top" title="Tooltip content goes here">
-                                                            <input class="ib-xl" type="text" name="" placeholder="Class Name 1, Class Name 2, Class Name 3">
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                
                                                 <div class="tm1-row">
                                                     <div class="col-left">
                                                         <label>
@@ -170,9 +156,22 @@
                                                     </div>
                                                 </div>
             
+                                                <div class="tm1-row flx-center">
+                                                    <div class="col-left">
+                                                        <label>Class Names Of The Form Fields:</label>
+                                                    </div>
+                                                    <div class="col-right">
+                                                        <div class="rc-flx-wrap flx-aln-center">
+                                                            <img class="tt-info" src="assets/images/icon-info.svg" alt="Info" data-toggle="tooltip" data-placement="top" title="Tooltip content goes here">
+                                                            <input class="ib-xl" type="text" name="" placeholder="Class Name 1, Class Name 2, Class Name 3">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                
+                                               
                                                 <div class="tm1-row">
                                                     <div class="col-left">
-                                                        <label>Enable Email Verification::</label>
+                                                        <label> Capture Email address from URL:</label>
                                                     </div>
                                                     <div class="col-right">
                                                         <div class="rc-flx-wrap flx-aln-center">
@@ -181,11 +180,12 @@
                                                         </div>
                                                     </div>
                                                 </div>
-            
+
                                                 <div class="tm1-row">
                                                     <div class="col-left">
                                                         <label>
-                                                            Enable abandoned cart emails:</label>
+                                                            Enable Email Verification:
+                                                            </label>
                                                     </div>
                                                     <div class="col-right">
                                                         <div class="rc-flx-wrap flx-aln-center">
@@ -196,8 +196,8 @@
                                                             </label>
                                                         </div>
                                                     </div>
-                                                </div>  
-                                               
+                                                </div>
+
                                                 <div class="tm1-row">
                                                     <div class="col-left">
                                                         <label>Enter DeBounce API Key:</label>
@@ -251,22 +251,6 @@
                                             <div class="tm1-row">
                                                 <div class="col-left">
                                                     <label>
-                                                        Do not track carts of guest users:</label>
-                                                </div>
-                                                <div class="col-right">
-                                                    <div class="rc-flx-wrap flx-aln-center">
-                                                        <img class="tt-info" src="assets/images/icon-info.svg" alt="Info" data-toggle="tooltip" data-placement="top" title="Tooltip content goes here">
-                                                        <label class="el-switch el-switch-green">
-                                                            <input type="checkbox" name="cb_opt_nm_21" value="cb_opt_val_21" checked>
-                                                            <span class="el-switch-style"></span>
-                                                        </label>
-                                                    </div>
-                                                </div>
-                                            </div>  
-
-                                            <div class="tm1-row">
-                                                <div class="col-left">
-                                                    <label>
                                                         Start tracking from Cart Page:</label>
                                                 </div>
                                                 <div class="col-right">
@@ -280,6 +264,23 @@
                                                 </div>
                                             </div>  
 
+                                            <div class="tm1-row">
+                                                <div class="col-left">
+                                                    <label>
+                                                        Do not track carts of guest users:</label>
+                                                </div>
+                                                <div class="col-right">
+                                                    <div class="rc-flx-wrap flx-aln-center">
+                                                        <img class="tt-info" src="assets/images/icon-info.svg" alt="Info" data-toggle="tooltip" data-placement="top" title="Tooltip content goes here">
+                                                        <label class="el-switch el-switch-green">
+                                                            <input type="checkbox" name="cb_opt_nm_21" value="cb_opt_val_21" checked>
+                                                            <span class="el-switch-style"></span>
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                            </div>  
+
+                                            
                                             <div class="tm1-row">
                                                 <div class="col-left">
                                                     <label>
@@ -448,33 +449,6 @@
                                                     </div>
                                                 </div>
                                             </div>
-
-                                            <div class="tm1-row">
-                                                <div class="col-left">
-                                                    <label>Enable SMS Consent:</label>
-                                                </div>
-                                                <div class="col-right">
-                                                    <div class="rc-flx-wrap flx-aln-center">
-                                                        <img class="tt-info" src="assets/images/icon-info.svg" alt="Info" data-toggle="tooltip" data-placement="top" title="Tooltip content goes here">
-                                                        <label class="el-switch el-switch-green">
-                                                            <input type="checkbox" name="cb_opt_nm_20" value="cb_opt_val_20" checked>
-                                                            <span class="el-switch-style" ></span>
-                                                        </label>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                               
-                                            <div class="tm1-row">
-                                                <div class="col-left">
-                                                    <label>SMS Consent Message:</label>
-                                                </div>
-                                                <div class="col-right">
-                                                    <div class="rc-flx-wrap">
-                                                        <img class="tt-info aw-text" src="assets/images/icon-info.svg" alt="Info">
-                                                        <textarea class="ta-sm" placeholder="Message to be displayed below the Phone field at Checkout informing users that their phone number and cart data are saved to send abandonment reminders. "></textarea>
-                                                    </div>
-                                                </div>
-                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -611,6 +585,18 @@
                                                     </div>
                                                 </div>
                                             </div>
+
+                                            <div class="tm1-row">
+                                                <div class="col-left">
+                                                    <label>Do not capture carts from countries:</label>
+                                                </div>
+                                                <div class="col-right">
+                                                    <div class="rc-flx-wrap">
+                                                        <img class="tt-info aw-text" src="assets/images/icon-info.svg" alt="Info">
+                                                        <textarea class="ta-sm" placeholder=" Select countries "></textarea>
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -670,7 +656,7 @@
                                                     <div class="rc-flx-wrap flx-aln-center">
                                                         <img class="tt-info" src="assets/images/icon-info.svg" alt="Info" data-toggle="tooltip" data-placement="top" title="Tooltip content goes here">
                                                         <input class="ib-sm ib-small" type="text" style="width:70px" name="" placeholder="2" />
-                                                        <p> &nbsp; X &nbsp;</p>
+                                                        <p style="margin-bottom: 0px;"> &nbsp; X &nbsp;</p>
                                                         <input class="ib-sm ib-small" type="text" style="width:70px" name="" placeholder="2" />
                                                     </div>
                                                 </div>
@@ -799,13 +785,6 @@
                 <div class="row">
                     <div class="col-md-12">
                         <div class="footer-wrap">
-                            <div class="alert alert-dark alert-dismissible fade show" role="alert">
-                                <img class="msg-icon" src="assets/images/icon-info-grey.svg" alt="Logo" /><a href="#">Get our Subscriptions Addon</a> & setup recurring deliveries with WooCommerce Subscriptions plugin & Order Delivery Date plugin.
-                                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-                                    <span aria-hidden="true">&times;</span>
-                                </button>
-                            </div>
-
                             <div class="ft-text">
                                 <p><a href="#">Need Support?</a> <strong>We’re always happy to help you.</strong></p>
                                 <p><a href="#">Please rate this plugin</a> <span class="rating">★★★★★</span> if this product helped you. <br>Thanks for your support</p>
