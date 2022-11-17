@@ -1,0 +1,983 @@
+<!doctype html>
+<html lang="en">
+   <head>
+      <!-- Required meta tags -->
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <!-- Bootstrap CSS -->
+      <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+      <link rel="stylesheet" href="assets/css/checkbox.css">
+      <link rel="stylesheet" href="assets/css/bootstrap-tokenfield.css">
+      <link rel="stylesheet" href="assets/css/theme-style.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css">
+      <script src="assets/js/choices.min.js"></script>
+      <title>Abandon Booking</title>
+   </head>
+   <body>
+      <div id="ordd-page" class="ordd-page">
+         <!-- Header -->
+         <div class="ordd-header">
+            <div class="container-fluid">
+               <div class="row">
+                  <div class="col-md-12">
+                     <div class="header-wrap">
+                        <div class="branding">
+                           <a href=""><img src="assets/images/ordd-logo.svg" alt="Logo" /></a>
+                        </div>
+                        <nav class="navbar navbar-expand-lg navbar-light ordd-navigation">
+                           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                              <span class="navbar-toggler-icon">
+                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                                    <path fill="none" d="M0 0h24v24H0z"/>
+                                    <path d="M3 4h18v2H3V4zm0 7h12v2H3v-2zm0 7h18v2H3v-2z" fill="rgba(255,255,255,1)"/>
+                                 </svg>
+                              </span>
+                           </button>
+                           <div class="collapse navbar-collapse" id="navbarNav">
+                              <ul class="navbar-nav menu nav-menu">
+                                 <li class="nav-item"><a class="nav-link" href="index.html">Dashboard</a></li>
+                                 <li class="nav-item"><a class="nav-link" href="order.html">Abandoned Orders</a></li>
+                                                               <li class="nav-item"><a class="nav-link" href="add-edit-email-template.html">Templates</a></li>
+                                 <li class="nav-item active"><a class="nav-link" href="popup-template.html">Settings</a></li>
+                                 <li class="nav-item"><a class="nav-link" href="reminder-sent-email.html">Reminder Sent</a></li>
+                                <li class="nav-item"><a class="nav-link" href="product-report.html">Product Report</a></li>
+                                 <li class="nav-item"><a class="nav-link" href="faq&support.html">FAQ & Support</a></li>
+                              </ul>
+                           </div>
+                        </nav>
+                        <div class="ordd-version">
+                           <p class="ver-fig">Abandoned Cart</p>
+                           <p class="ver-fig">Version 5.7.2</p>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <!-- Header End -->
+         <!-- Content Area -->
+         <div class="ordd-content-area">
+            <div class="container cw-full secondary-nav">
+               <div class="row">
+                  <div class="col-md-12">
+                     <!-- Secondary Navigation -->
+                     <div class="secondary-nav-wrap">
+                        <ul>
+                           <li><a href="">General</a></li>
+                           <li class="current-menu-item"><a href="">Popup Templates</a></li>
+                           <li><a href="">Facebook Messenger</a></li>
+                           <li><a href="sms-reminder.html">SMS</a></li>
+                           <li><a href="connectors.html">Connectors</a></li>
+                           <li><a href="">Email Reports</a></li>
+                           <li><a href="license.html">License</a></li>
+                        </ul>
+                     </div>
+                     <!-- Secondary Navigation - End -->
+                  </div>
+               </div>
+            </div>
+            <div class="container max-1100">
+               <div class="row">
+                  <div class="col-md-12">
+                     <div class="ordd-page-head phw-btn justify-content-between">
+                        <div class="col-left">
+                           <h1>Popup Templates</h1>
+                           <p>Add different Add to Cart popup templates for different pages to maximize the possibility of collecting email addresses <br>from users.</p>
+                        </div>
+                        <div class="col-right">
+                           <button type="button">Save Settings</button>
+                        </div>
+                     </div>
+                     <div class="wbc-accordion">
+                        <div class="panel-group ordd-accordian" id="wbc-accordion">
+                           <!-- First Panel -->
+                           <div class="panel panel-default mb-4">
+                              <div class="panel-heading">
+                                 <h2 class="panel-title" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false">
+                                    Edit/Add Popup Templates
+                                 </h2>
+                              </div>
+                              <div id="collapseOne" class="panel-collapse collapse show">
+                                 <div class="panel-body">
+                                    <div class="tbl-mod-1">
+                                       <div class="tm1-row align-items-center">
+                                          <div class="col-left">
+                                             <label>Template Name:</label>
+                                          </div>
+                                          <div class="col-right">
+                                             <div class="row-box-1">
+                                                <div class="rb1-left">
+                                                   <img class="tt-info" src="assets/images/icon-info.svg" alt="Info" data-toggle="tooltip" data-placement="top" title="Tooltip content goes here">
+                                                </div>
+                                                <div class="rb1-right">
+                                                   <div class="rb1-row flx-center">
+                                                      <div class="rb-col">
+                                                         <input class="ib-xl" type="text" name="" placeholder="Popup Templates name goes here...">
+                                                      </div>
+                                                   </div>
+                                                </div>
+                                             </div>
+                                          </div>
+                                       </div>
+                                       <div class="tm1-row align-items-center">
+                                          <div class="col-left">
+                                             <label>Template Type:</label>
+                                          </div>
+                                          <div class="col-right">
+                                             <div class="row-box-1">
+                                                <div class="rb1-left">
+                                                   <img class="tt-info" src="assets/images/icon-info.svg" alt="Info" data-toggle="tooltip" data-placement="top" title="" data-original-title="Tooltip content goes here">
+                                                </div>
+                                                <div class="rb1-right">
+                                                   <div class="rb1-row flx-center">
+                                                      <div class="rb-col">
+                                                         <select class="ib-md" id="add-buy-box">
+                                                            <option value="1">Add To Cart</option>
+                                                            <option value="2">Buy Now</option>
+                                                         </select>
+                                                      </div>
+                                                   </div>
+                                                </div>
+                                             </div>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <!-- First Panel -->
+                           <div class="panel panel-default mb-4">
+                              <div class="panel-heading">
+                                 <h2 class="panel-title" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false">
+                                    Rules
+                                 </h2>
+                              </div>
+                              <div id="collapseTwo" class="panel-collapse collapse show">
+                                 <div class="panel-body">
+                                    <div class="tbl-mod-1">
+                                       <div class="custom-integrations mb-4">
+                                          <div class="bts-content">
+                                             <div class="tbl-mod-2 flx-100">
+                                                <div class="tm2-inner-wrap tbl-responsive">
+                                                   <table class="for-action" style="display: none;">
+                                                      <tbody>
+                                                         <tr>
+                                                            <td>
+                                                               <button type="button" class="btn btn-outline-primary blue-button btn-sm add-new">Save Setting</button>
+                                                               <a class="edit-delvry-sche edit" data-toggle="collapse" href="#" id="action-edit" role="button" aria-expanded="false" aria-controls="collapseExample" style="display: none;"> Edit</a>
+                                                               <!-- <a class="enable" title="Enable" style="display: none;">Enable</a> --> <a class="delete ml-2" title="Enable"><i class="fas fa-trash"></i></a>
+                                                            </td>
+                                                         </tr>
+                                                      </tbody>
+                                                   </table>
+                                                   <table class="table">
+                                                      <thead>
+                                                         <tr>
+                                                            <th>Rules Type</th>
+                                                            <th>Conditions</th>
+                                                            <th>Values</th>
+                                                            <th>Actions</th>
+                                                         </tr>
+                                                      </thead>
+                                                      <tbody>
+                                                         <tr class="cloned-row">
+                                                            <td>Product Tags</td>
+                                                            <td>Excludes any of</td>
+                                                            <td>Products TAGS</td>
+                                                            <td>
+                                                               <a class="add" title="Update" data-toggle="tooltip">Update</a>
+                                                               <a class="template-edit" title="edit" data-toggle="tooltip">Edit</a>
+                                                               <a class="delete" title="Delete" data-toggle="tooltip">Delete</a>
+                                                            </td>
+                                                         </tr>
+                                                         <tr class="cloned-row">
+                                                            <td>Product Tags</td>
+                                                            <td>Excludes any of</td>
+                                                            <td>Products TAGS</td>
+                                                            <td>
+                                                               <a class="add" title="Update" data-toggle="tooltip">Update</a>
+                                                               <a class="template-edit" title="edit" data-toggle="tooltip">Edit</a>
+                                                               <a class="delete" title="Delete" data-toggle="tooltip">Delete</a>
+                                                            </td>
+                                                         </tr>
+                                                         <tr class="cloned-row">
+                                                            <td>Product Tags</td>
+                                                            <td>Excludes any of</td>
+                                                            <td>Products TAGS</td>
+                                                            <td>
+                                                               <a class="add" title="Update" data-toggle="tooltip">Update</a>
+                                                               <a class="template-edit" title="edit" data-toggle="tooltip">Edit</a>
+                                                               <a class="delete" title="Delete" data-toggle="tooltip">Delete</a>
+                                                            </td>
+                                                         </tr>
+                                                      </tbody>
+                                                   </table>
+                                                   <!-- <div class="add-more-link link-flx">
+                                                      <a class="al-link" data-toggle="collapse" href="#col_opt_id_1" role="button" aria-expanded="false" aria-controls="col_opt_id_1"><img src="assets/images/icon-plus.svg" alt="Icon"> Add More</a>
+                                                      </div> -->
+                                                </div>
+                                                <div class="add-more-link">
+                                                   <a class="al-link add_new_template_range" id="add_product_availability"><img src="assets/images/icon-plus.svg" alt="Icon" /> Add New Range</a>
+                                                </div>
+                                             </div>
+                                          </div>
+                                       </div>
+                                       <div class="tm1-row border-top-0 pt-0 pb-0">
+                                          <div class="col-left">
+                                             <label>Match Rules:</label>
+                                          </div>
+                                          <div class="col-right">
+                                             <div class="row-box-1">
+                                                <div class="rb1-left">
+                                                   <img class="tt-info" src="assets/images/icon-info.svg" alt="Info" data-toggle="tooltip" data-placement="top" title="" data-original-title="Tooltip content goes here">
+                                                </div>
+                                                <div class="rb1-right">
+                                                   <div class="rb1-row flx-center">
+                                                      <div class="rb-col">
+                                                         <select class="ib-md">
+                                                            <option>Match all rule(s)</option>
+                                                            <option>Match all rule(s)</option>
+                                                         </select>
+                                                      </div>
+                                                   </div>
+                                                </div>
+                                             </div>
+                                          </div>
+                                       </div>
+                                    </div>
+                                    <div class="rb1-row flx-center mb-4">
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <!-- First Panel -->
+                           <div class="panel panel-default mb-4">
+                              <div class="panel-heading">
+                                 <h2 class="panel-title" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false">
+                                    Coupon Settings
+                                 </h2>
+                              </div>
+                              <div id="collapseThree" class="panel-collapse collapse show">
+                                 <div class="panel-body">
+                                    <div class="tbl-mod-1">
+                                       <div class="tm1-row">
+                                          <div class="col-left">
+                                             <label>Offer coupons on email address capture:</label>
+                                          </div>
+                                          <div class="col-right">
+                                             <div class="row-box-1">
+                                                <div class="rb1-left">
+                                                   <img class="tt-info m-0" src="assets/images/icon-info.svg" alt="Info" data-toggle="tooltip" data-placement="top" title="Tooltip content goes here">
+                                                </div>
+                                                <div class="rb1-right">
+                                                   <div class="rb1-row flx-center">
+                                                      <label class="el-switch el-switch-green">
+                                                      <input type="checkbox" name="cb_opt_nm_23" value="cb_opt_val_23" id="switch-toggle" checked="">
+                                                      <span class="el-switch-style"></span>
+                                                      </label>
+                                                   </div>
+                                                </div>
+                                             </div>
+                                          </div>
+                                       </div>
+                                       <div class="coupon__main coupon__one">
+                                          <div class="tm1-row align-items-center">
+                                             <div class="col-left">
+                                                <label>Type of Coupon to apply:</label>
+                                             </div>
+                                             <div class="col-right">
+                                                <div class="row-box-1">
+                                                   <div class="rb1-left">
+                                                      <img class="tt-info" src="assets/images/icon-info.svg" alt="Info" data-toggle="tooltip" data-placement="top" title="" data-original-title="Tooltip content goes here">
+                                                   </div>
+                                                   <div class="rb1-right">
+                                                      <div class="rb1-row flx-center">
+                                                         <div class="rb-col">
+                                                            <select class="ib-md">
+                                                               <option>Generate unique coupon code</option>
+                                                               <option>Generate unique coupon code</option>
+                                                            </select>
+                                                         </div>
+                                                      </div>
+                                                   </div>
+                                                </div>
+                                             </div>
+                                          </div>
+                                          <div class="tm1-row align-items-center">
+                                             <div class="col-left">
+                                                <label>Discount Type:</label>
+                                             </div>
+                                             <div class="col-right">
+                                                <div class="row-box-1">
+                                                   <div class="rb1-left">
+                                                      <img class="tt-info" src="assets/images/icon-info.svg" alt="Info" data-toggle="tooltip" data-placement="top" title="" data-original-title="Tooltip content goes here">
+                                                   </div>
+                                                   <div class="rb1-right">
+                                                      <div class="rb1-row flx-center">
+                                                         <div class="rb-col">
+                                                            <select class="ib-md">
+                                                               <option>Fixed cart Amount</option>
+                                                               <option>Fixed cart Amount</option>
+                                                            </select>
+                                                         </div>
+                                                      </div>
+                                                   </div>
+                                                </div>
+                                             </div>
+                                          </div>
+                                          <div class="tm1-row align-items-center">
+                                             <div class="col-left">
+                                                <label>Discount Amount:</label>
+                                             </div>
+                                             <div class="col-right">
+                                                <div class="row-box-1">
+                                                   <div class="rb1-left">
+                                                      <img class="tt-info" src="assets/images/icon-info.svg" alt="Info" data-toggle="tooltip" data-placement="top" title="Tooltip content goes here">
+                                                   </div>
+                                                   <div class="rb1-right">
+                                                      <div class="rb1-row flx-center">
+                                                         <div class="rb-col">
+                                                            <input class="ib-mb" type="text" name="" placeholder="$350">
+                                                         </div>
+                                                      </div>
+                                                   </div>
+                                                </div>
+                                             </div>
+                                          </div>
+                                          <div class="tm1-row">
+                                             <div class="col-left">
+                                                <label>Allow Free Shiping?:</label>
+                                             </div>
+                                             <div class="col-right">
+                                                <div class="row-box-1">
+                                                   <div class="rb1-left">
+                                                      <img class="tt-info m-0" src="assets/images/icon-info.svg" alt="Info" data-toggle="tooltip" data-placement="top" title="Tooltip content goes here">
+                                                   </div>
+                                                   <div class="rb1-right">
+                                                      <div class="rb1-row flx-center">
+                                                         <label class="el-switch el-switch-green">
+                                                         <input type="checkbox" name="cb_opt_nm_23" value="cb_opt_val_23" checked="">
+                                                         <span class="el-switch-style"></span>
+                                                         </label>
+                                                      </div>
+                                                   </div>
+                                                </div>
+                                             </div>
+                                          </div>
+                                          <div class="tm1-row align-items-center">
+                                             <div class="col-left">
+                                                <label>Coupon validity (in minutes):</label>
+                                             </div>
+                                             <div class="col-right">
+                                                <div class="row-box-1">
+                                                   <div class="rb1-left">
+                                                      <img class="tt-info" src="assets/images/icon-info.svg" alt="Info" data-toggle="tooltip" data-placement="top" title="Tooltip content goes here">
+                                                   </div>
+                                                   <div class="rb1-right">
+                                                      <div class="rb1-row flx-center">
+                                                         <div class="rb-col">
+                                                            <input class="ib-mb" type="text" name="" placeholder="10">
+                                                         </div>
+                                                      </div>
+                                                   </div>
+                                                </div>
+                                             </div>
+                                          </div>
+                                          <div class="tm1-row align-items-center">
+                                             <div class="col-left">
+                                                <label>Urgency message to boost your conversions:</label>
+                                             </div>
+                                             <div class="col-right">
+                                                <div class="row-box-1">
+                                                   <div class="rb1-left">
+                                                      <img class="tt-info" src="assets/images/icon-info.svg" alt="Info" data-toggle="tooltip" data-placement="top" title="Tooltip content goes here">
+                                                   </div>
+                                                   <div class="rb1-right">
+                                                      <div class="rb1-row flx-center">
+                                                         <div class="rb-col">
+                                                            <input class="ib-xl" type="text" name="" placeholder="Coupon <coupon_code> expires in <hh:mm:ss>. Avail it now.">
+                                                         </div>
+                                                      </div>
+                                                   </div>
+                                                </div>
+                                             </div>
+                                          </div>
+                                          <div class="tm1-row align-items-center">
+                                             <div class="col-left">
+                                                <label>Message to display after coupon validity is reached:</label>
+                                             </div>
+                                             <div class="col-right">
+                                                <div class="row-box-1">
+                                                   <div class="rb1-left">
+                                                      <img class="tt-info" src="assets/images/icon-info.svg" alt="Info" data-toggle="tooltip" data-placement="top" title="Tooltip content goes here">
+                                                   </div>
+                                                   <div class="rb1-right">
+                                                      <div class="rb1-row flx-center">
+                                                         <div class="rb-col">
+                                                            <input class="ib-xl" type="text" name="" placeholder="the offer is no longer valid.">
+                                                         </div>
+                                                      </div>
+                                                   </div>
+                                                </div>
+                                             </div>
+                                          </div>
+                                          <div class="tm1-row">
+                                             <div class="col-left">
+                                                <label>Display Urgency message on Cart page (If disabled it will  display only on Checkout page):</label>
+                                             </div>
+                                             <div class="col-right">
+                                                <div class="row-box-1">
+                                                   <div class="rb1-left">
+                                                      <img class="tt-info m-0" src="assets/images/icon-info.svg" alt="Info" data-toggle="tooltip" data-placement="top" title="Tooltip content goes here">
+                                                   </div>
+                                                   <div class="rb1-right">
+                                                      <div class="rb1-row flx-center">
+                                                         <label class="el-switch el-switch-green">
+                                                         <input type="checkbox" name="cb_opt_nm_23" value="cb_opt_val_23" checked="">
+                                                         <span class="el-switch-style"></span>
+                                                         </label>
+                                                      </div>
+                                                   </div>
+                                                </div>
+                                             </div>
+                                          </div>
+                                          <div class="tm1-row border-top-0 pt-0">
+                                             <div class="col-left">
+                                                <label></label>
+                                             </div>
+                                             <div class="col-right">
+                                                <div class="row-box-1">
+                                                   <div class="rb1-right">
+                                                      <div class="rb1-row flx-center">
+                                                         <p class="mb-0">Note: For orders which use the coupon selected/generated by the ATC module will be marked as "ATC Coupon Used" in WooCommerce->Orders.</p>
+                                                      </div>
+                                                   </div>
+                                                </div>
+                                             </div>
+                                          </div>
+                                       </div>
+                                       <div class="coupon__main coupon__two">
+                                          <div class="tm1-row align-items-center">
+                                             <div class="col-left">
+                                                <label>Coupon code to apply:</label>
+                                             </div>
+                                             <div class="col-right">
+                                                <div class="row-box-1">
+                                                   <div class="rb1-left">
+                                                      <img class="tt-info" src="assets/images/icon-info.svg" alt="Info" data-toggle="tooltip" data-placement="top" title="Tooltip content goes here">
+                                                   </div>
+                                                   <div class="rb1-right">
+                                                      <div class="rb1-row flx-center">
+                                                         <div class="rb-col">
+                                                            <input class="ib-mb" type="text" name="" placeholder="Search for a coupom">
+                                                         </div>
+                                                      </div>
+                                                   </div>
+                                                </div>
+                                             </div>
+                                          </div>
+                                          <div class="tm1-row align-items-center">
+                                             <div class="col-left">
+                                                <label>default configuration:</label>
+                                             </div>
+                                             <div class="col-right">
+                                                <div class="row-box-1">
+                                                   <div class="rb1-left">
+                                                      <img class="tt-info" src="assets/images/icon-info.svg" alt="Info" data-toggle="tooltip" data-placement="top" title="Tooltip content goes here">
+                                                   </div>
+                                                   <div class="rb1-right">
+                                                      <div class="rb1-row flx-center">
+                                                         <div class="rb-col">
+                                                            <button class="trietary-btn reverse">Reset</button>
+                                                         </div>
+                                                      </div>
+                                                   </div>
+                                                </div>
+                                             </div>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <!-- First Panel -->
+                           <div class="panel-add-cart" id="panel-add-cart-div">
+                              <div class="panel panel-default mb-4">
+                                 <div class="panel-heading">
+                                    <h2 class="panel-title" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false">
+                                       Configure popup
+                                    </h2>
+                                 </div>
+                                 <div id="collapseFour" class="panel-collapse collapse show">
+                                    <div class="panel-body pt-0 pl-0 pb-0">
+                                       <div class="tbl-mod-1">
+                                          <div class="row align-items-center">
+                                             <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12">
+                                                <div class="configure-popup">
+                                                   <div class="configure-head">
+                                                      <h2>Configure popup</h2>
+                                                   </div>
+                                                   <div class="configure-body">
+                                                      <div class="tbl-mod-1">
+                                                         <div class="tm1-row align-items-center">
+                                                            <div class="col-left">
+                                                               <label>Modal Heading:</label>
+                                                               <img class="tt-info" src="assets/images/icon-info.svg" alt="Info" data-toggle="tooltip" data-placement="top" title="" data-original-title="Tooltip content goes here">
+                                                            </div>
+                                                            <div class="col-right">
+                                                               <div class="row-box-1">
+                                                                  <div class="rb1-right">
+                                                                     <div class="rb1-row flx-center mb-2">
+                                                                        <div class="rb-col mt-2">
+                                                                           <input class="ib-md" type="text" name="" placeholder="Subscribe Now Our Newsletter!">
+                                                                        </div>
+                                                                     </div>
+                                                                     <div class="color-picker color-swither">
+                                                                         <input type="color" id="favcolor" class="holiday-color" name="favcolor" value="#E72C2C"> <span for="favcolor" class="holiday-color">#E72C2C</span> 
+                                                                     </div>
+                                                                  </div>
+                                                               </div>
+                                                            </div>
+                                                         </div>
+                                                         <div class="tm1-row align-items-center">
+                                                            <div class="col-left">
+                                                               <label>Modal Text:</label>
+                                                               <img class="tt-info" src="assets/images/icon-info.svg" alt="Info" data-toggle="tooltip" data-placement="top" title="" data-original-title="Tooltip content goes here">
+                                                            </div>
+                                                            <div class="col-right">
+                                                               <div class="row-box-1">
+                                                                  <div class="rb1-right">
+                                                                     <div class="rb1-row flx-center mb-2">
+                                                                        <div class="rb-col mt-2">
+                                                                           <input class="ib-md" type="text" name="" placeholder="Modal text">
+                                                                        </div>
+                                                                     </div>
+                                                                     <div class="color-picker color-swither">
+                                                                         <input type="color" id="favcolor" class="holiday-color" name="favcolor" value="#FFBA00"> <span for="favcolor" class="holiday-color">#FFBA00</span> 
+                                                                     </div>
+                                                                  </div>
+                                                               </div>
+                                                            </div>
+                                                         </div>
+                                                         <div class="tm1-row align-items-center">
+                                                            <div class="col-left">
+                                                               <label>Add to cart button text:</label>
+                                                               <img class="tt-info" src="assets/images/icon-info.svg" alt="Info" data-toggle="tooltip" data-placement="top" title="" data-original-title="Tooltip content goes here">
+                                                            </div>
+                                                            <div class="col-right">
+                                                               <div class="row-box-1">
+                                                                  <div class="rb1-right">
+                                                                     <div class="rb1-row flx-center mb-2">
+                                                                        <div class="rb-col mt-2">
+                                                                           <input class="ib-md" type="text" name="" placeholder="Add To Cart">
+                                                                        </div>
+                                                                     </div>
+                                                                     <div class="d-flex">
+                                                                        <div class="color-picker color-swither mr-2">
+                                                                            <input type="color" id="favcolor1" class="holiday-color" name="favcolor" value="#FFBA00"> <span for="favcolor" class="holiday-color">#FFBA00</span> 
+                                                                        </div>
+                                                                        <div class="color-picker color-swither">
+                                                                            <input type="color" id="favcolor1" class="holiday-color" name="favcolor" value="#1A8D34"> <span for="favcolor" class="holiday-color">#1A8D34</span> 
+                                                                        </div>
+                                                                     </div>
+                                                                  </div>
+                                                               </div>
+                                                            </div>
+                                                         </div>
+                                                         <div class="tm1-row align-items-center">
+                                                            <div class="col-left">
+                                                               <label>Email address mandatory?</label>
+                                                               <img class="tt-info" src="assets/images/icon-info.svg" alt="Info" data-toggle="tooltip" data-placement="top" title="" data-original-title="Tooltip content goes here">
+                                                               <label class="el-switch el-switch-green ml-3">
+                                                                    <input type="checkbox" name="cb_opt_nm_23" value="cb_opt_val_23" id="enable_seasonal_price" checked="">
+                                                                    <span class="el-switch-style"></span>
+                                                                </label>
+                                                            </div>
+                                                         </div>
+                                                         <div class="tm1-row align-items-center" id="enable_seasonal_price_div">
+                                                            <div class="col-left">
+                                                               <label>Not mandatory text:</label>
+                                                               <img class="tt-info" src="assets/images/icon-info.svg" alt="Info" data-toggle="tooltip" data-placement="top" title="" data-original-title="Tooltip content goes here">
+                                                            </div>
+                                                            <div class="col-right">
+                                                               <div class="row-box-1">
+                                                                  <div class="rb1-right">
+                                                                     <div class="rb1-row flx-center mb-2">
+                                                                        <div class="rb-col mt-2">
+                                                                           <input class="ib-md" type="text" name="" placeholder="Subject Name goes here...">
+                                                                        </div>
+                                                                     </div>
+                                                                  </div>
+                                                               </div>
+                                                            </div>
+                                                         </div>
+                                                         <div class="tm1-row align-items-center">
+                                                            <div class="col-left">
+                                                               <label>Capture Phone off:</label>
+                                                               <img class="tt-info" src="assets/images/icon-info.svg" alt="Info" data-toggle="tooltip" data-placement="top" title="" data-original-title="Tooltip content goes here">
+                                                               <label class="el-switch el-switch-green ml-3">
+                                                                    <input type="checkbox" name="cb_opt_nm_23" value="cb_opt_val_23" id="enable_partial_payment" checked="">
+                                                                    <span class="el-switch-style"></span>
+                                                                </label>
+                                                            </div>
+                                                         </div>
+                                                         <div class="tm1-row partial_payment_div align-items-center">
+                                                            <div class="col-left">
+                                                               <label>Phone placeholder:</label>
+                                                               <img class="tt-info" src="assets/images/icon-info.svg" alt="Info" data-toggle="tooltip" data-placement="top" title="" data-original-title="Tooltip content goes here">
+                                                            </div>
+                                                            <div class="col-right">
+                                                               <div class="row-box-1">
+                                                                  <div class="rb1-right">
+                                                                     <div class="rb1-row flx-center mb-2">
+                                                                        <div class="rb-col mt-2">
+                                                                           <input class="ib-md" type="text" name="" placeholder="+91 99999 99999">
+                                                                        </div>
+                                                                     </div>
+                                                                  </div>
+                                                               </div>
+                                                            </div>
+                                                         </div>
+                                                      </div>
+                                                   </div>
+                                                </div>
+                                             </div>
+                                             <div class="col-xl-8 col-lg-8 col-md-12 col-sm-12 col-12">
+                                                <div class="subscribe-body">
+                                                   <div class="subscribe-head">
+                                                      <h2 class="mb-0">Subscribe Now Our Newsletter!</h2>
+                                                   </div>
+                                                   <div class="subscribe-main">
+                                                      <div class="tm1-row align-items-center">
+                                                         <div class="col-left">
+                                                            <label>Email placeholder:</label>
+                                                         </div>
+                                                         <div class="col-right">
+                                                            <div class="row-box-1">
+                                                               <div class="rb1-right">
+                                                                  <div class="rb1-row flx-center">
+                                                                     <div class="rb-col">
+                                                                        <input class="ib-md" type="text" name="" placeholder="Email Address">
+                                                                     </div>
+                                                                  </div>
+                                                               </div>
+                                                            </div>
+                                                         </div>
+                                                      </div>
+                                                      <div class="tm1-row align-items-center">
+                                                         <div class="col-left">
+                                                            <label>Phone Number:</label>
+                                                         </div>
+                                                         <div class="col-right">
+                                                            <div class="row-box-1">
+                                                               <div class="rb1-right">
+                                                                  <div class="rb1-row flx-center">
+                                                                     <div class="rb-col">
+                                                                        <textarea class="ib-md min-auto" rows="3">Please enter your phone number in E.164 format</textarea>
+                                                                     </div>
+                                                                  </div>
+                                                                  <div class="subscribe-btn">
+                                                                     <button type="button" class="mr-2">Complete My Order!</button>
+                                                                     <a href="">No Thanks</a>
+                                                                  </div>
+                                                               </div>
+                                                            </div>
+                                                         </div>
+                                                      </div>
+                                                   </div>
+                                                </div>
+                                             </div>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <!-- First Panel -->
+                           <div class="panel-by-now d-none" id="panel-by-now-div">
+                              <div class="panel panel-default mb-4">
+                                 <div class="panel-heading">
+                                    <h2 class="panel-title" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false">
+                                       Configure popup for guest users
+                                    </h2>
+                                 </div>
+                                 <div id="collapseFive" class="panel-collapse collapse show">
+                                    <div class="panel-body pt-0 pl-0 pb-0">
+                                       <div class="tbl-mod-1">
+                                          <div class="row align-items-center">
+                                             <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12">
+                                                <div class="configure-popup">
+                                                   <div class="configure-head">
+                                                      <h2>Configure popup for guest users</h2>
+                                                   </div>
+                                                   <div class="configure-body">
+                                                      <div class="tbl-mod-1">
+                                                         <div class="tm1-row align-items-center">
+                                                            <div class="col-left">
+                                                               <label>Allow all users (including guest users) to checkout without capturing email</label>
+                                                               <img class="tt-info" src="assets/images/icon-info.svg" alt="Info" data-toggle="tooltip" data-placement="top" title="" data-original-title="Tooltip content goes here">
+                                                               <label class="el-switch el-switch-green ml-1">
+                                                                    <input type="checkbox" name="cb_opt_nm_23" value="cb_opt_val_23" id="enable_seasonal_price" checked="">
+                                                                    <span class="el-switch-style"></span>
+                                                                </label>
+                                                            </div>
+                                                         </div>
+                                                         <div class="tm1-row align-items-center border-top-0 pt-0">
+                                                            <div class="col-left">
+                                                               <label>Modal Heading:</label>
+                                                               <img class="tt-info" src="assets/images/icon-info.svg" alt="Info" data-toggle="tooltip" data-placement="top" title="" data-original-title="Tooltip content goes here">
+                                                            </div>
+                                                            <div class="col-right">
+                                                               <div class="row-box-1">
+                                                                  <div class="rb1-right">
+                                                                     <div class="rb1-row flx-center mb-2">
+                                                                        <div class="rb-col mt-2">
+                                                                           <input class="ib-md" type="text" name="" placeholder="We are sad to see you leave">
+                                                                        </div>
+                                                                     </div>
+                                                                     <div class="color-picker color-swither">
+                                                                         <input type="color" id="favcolor" class="holiday-color" name="favcolor" value="#737f97"> <span for="favcolor" class="holiday-color">#737f97</span> 
+                                                                     </div>
+                                                                  </div>
+                                                               </div>
+                                                            </div>
+                                                         </div>
+                                                         <div class="tm1-row align-items-center">
+                                                            <div class="col-left">
+                                                               <label>Modal Text:</label>
+                                                               <img class="tt-info" src="assets/images/icon-info.svg" alt="Info" data-toggle="tooltip" data-placement="top" title="" data-original-title="Tooltip content goes here">
+                                                            </div>
+                                                            <div class="col-right">
+                                                               <div class="row-box-1">
+                                                                  <div class="rb1-right">
+                                                                     <div class="rb1-row flx-center mb-2">
+                                                                        <div class="rb-col mt-2">
+                                                                           <input class="ib-md" type="text" name="" placeholder="There are some items in your cart.">
+                                                                        </div>
+                                                                     </div>
+                                                                     <div class="color-picker color-swither">
+                                                                         <input type="color" id="favcolor" class="holiday-color" name="favcolor" value="#000000"> <span for="favcolor" class="holiday-color">#000000</span> 
+                                                                     </div>
+                                                                  </div>
+                                                               </div>
+                                                            </div>
+                                                         </div>
+                                                         <div class="tm1-row align-items-center">
+                                                            <div class="col-left">
+                                                               <label>Link Text</label>
+                                                               <img class="tt-info" src="assets/images/icon-info.svg" alt="Info" data-toggle="tooltip" data-placement="top" title="" data-original-title="Tooltip content goes here">
+                                                            </div>
+                                                            <div class="col-right">
+                                                               <div class="row-box-1">
+                                                                  <div class="rb1-right">
+                                                                     <div class="rb1-row flx-center mb-2">
+                                                                        <div class="rb-col mt-2">
+                                                                           <input class="ib-md" type="text" name="" placeholder="Complete my order!">
+                                                                        </div>
+                                                                     </div>
+                                                                     <div class="color-picker color-swither mr-2">
+                                                                         <input type="color" id="favcolor1" class="holiday-color" name="favcolor" value="#FFFFFF"> <span for="favcolor" class="holiday-color">#FFFFFF</span> 
+                                                                     </div>
+                                                                  </div>
+                                                               </div>
+                                                            </div>
+                                                         </div>
+                                                         <div class="tm1-row pb-0 align-items-center">
+                                                            <div class="col-left">
+                                                               <label>Link to redirect to</label>
+                                                               <img class="tt-info" src="assets/images/icon-info.svg" alt="Info" data-toggle="tooltip" data-placement="top" title="" data-original-title="Tooltip content goes here">
+                                                            </div>
+                                                            <div class="col-right">
+                                                               <div class="row-box-1">
+                                                                  <div class="rb1-right">
+                                                                     <div class="rb1-row flx-center mb-2">
+                                                                        <div class="rb-col mt-2">
+                                                                           <input class="ib-md" type="text" name="" placeholder="https://staging.tychesoftwares.com/woo_pinal/checkout/">
+                                                                           <p class="mt-2 mb-0">URL of the page where the popup should redirect. Leaving blank here will take the user to the Checkout page.</p>
+                                                                        </div>
+                                                                     </div>
+                                                                  </div>
+                                                               </div>
+                                                            </div>
+                                                         </div>
+                                                      </div>
+                                                   </div>
+                                                </div>
+                                             </div>
+                                             <div class="col-xl-8 col-lg-8 col-md-12 col-sm-12 col-12">
+                                                <div class="subscribe-body buy-subscribe-box text-center">
+                                                   <div class="subscribe-head">
+                                                      <h2 class="mb-0">We are sad to see you leave</h2>
+                                                   </div>
+                                                   <div class="subscribe-main">
+                                                      <p>There are some items in your cart. These will not last long. Please proceed to checkout to complete the purchase!</p>
+                                                      <button class="trietary-btn">Complete my order!</button>
+                                                   </div>
+                                                </div>
+                                             </div>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="panel panel-default mb-4">
+                                 <div class="panel-heading">
+                                    <h2 class="panel-title" data-toggle="collapse" data-target="#collapseSix" aria-expanded="false">
+                                       Configer popup for logged-in users
+                                    </h2>
+                                 </div>
+                                 <div id="collapseSix" class="panel-collapse collapse show">
+                                    <div class="panel-body pt-0 pl-0 pb-0">
+                                       <div class="tbl-mod-1">
+                                          <div class="row align-items-center">
+                                             <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12">
+                                                <div class="configure-popup">
+                                                   <div class="configure-head">
+                                                      <h2>Configer popup for logged-in users</h2>
+                                                   </div>
+                                                   <div class="configure-body">
+                                                      <div class="tbl-mod-1">
+                                                         <div class="tm1-row align-items-center">
+                                                            <div class="col-left">
+                                                               <label>Allow all users (including guest users) to checkout without capturing email</label>
+                                                               <img class="tt-info" src="assets/images/icon-info.svg" alt="Info" data-toggle="tooltip" data-placement="top" title="" data-original-title="Tooltip content goes here">
+                                                               <label class="el-switch el-switch-green ml-1">
+                                                                    <input type="checkbox" name="cb_opt_nm_23" value="cb_opt_val_23" id="enable_seasonal_price" checked="">
+                                                                    <span class="el-switch-style"></span>
+                                                                </label>
+                                                            </div>
+                                                         </div>
+                                                         <div class="tm1-row align-items-center border-top-0 pt-0">
+                                                            <div class="col-left">
+                                                               <label>Modal Heading:</label>
+                                                               <img class="tt-info" src="assets/images/icon-info.svg" alt="Info" data-toggle="tooltip" data-placement="top" title="" data-original-title="Tooltip content goes here">
+                                                            </div>
+                                                            <div class="col-right">
+                                                               <div class="row-box-1">
+                                                                  <div class="rb1-right">
+                                                                     <div class="rb1-row flx-center mb-2">
+                                                                        <div class="rb-col mt-2">
+                                                                           <input class="ib-md" type="text" name="" placeholder="We are sad to see you leave">
+                                                                        </div>
+                                                                     </div>
+                                                                     <div class="color-picker color-swither">
+                                                                         <input type="color" id="favcolor" class="holiday-color" name="favcolor" value="#737f97"> <span for="favcolor" class="holiday-color">#737f97</span> 
+                                                                     </div>
+                                                                  </div>
+                                                               </div>
+                                                            </div>
+                                                         </div>
+                                                         <div class="tm1-row align-items-center">
+                                                            <div class="col-left">
+                                                               <label>Modal Text:</label>
+                                                               <img class="tt-info" src="assets/images/icon-info.svg" alt="Info" data-toggle="tooltip" data-placement="top" title="" data-original-title="Tooltip content goes here">
+                                                            </div>
+                                                            <div class="col-right">
+                                                               <div class="row-box-1">
+                                                                  <div class="rb1-right">
+                                                                     <div class="rb1-row flx-center mb-2">
+                                                                        <div class="rb-col mt-2">
+                                                                           <input class="ib-md" type="text" name="" placeholder="There are some items in your cart.">
+                                                                        </div>
+                                                                     </div>
+                                                                     <div class="color-picker color-swither">
+                                                                         <input type="color" id="favcolor" class="holiday-color" name="favcolor" value="#000000"> <span for="favcolor" class="holiday-color">#000000</span> 
+                                                                     </div>
+                                                                  </div>
+                                                               </div>
+                                                            </div>
+                                                         </div>
+                                                         <div class="tm1-row align-items-center">
+                                                            <div class="col-left">
+                                                               <label>Link Text</label>
+                                                               <img class="tt-info" src="assets/images/icon-info.svg" alt="Info" data-toggle="tooltip" data-placement="top" title="" data-original-title="Tooltip content goes here">
+                                                            </div>
+                                                            <div class="col-right">
+                                                               <div class="row-box-1">
+                                                                  <div class="rb1-right">
+                                                                     <div class="rb1-row flx-center mb-2">
+                                                                        <div class="rb-col mt-2">
+                                                                           <input class="ib-md" type="text" name="" placeholder="Complete my order!">
+                                                                        </div>
+                                                                     </div>
+                                                                     <div class="color-picker color-swither mr-2">
+                                                                         <input type="color" id="favcolor1" class="holiday-color" name="favcolor" value="#FFFFFF"> <span for="favcolor" class="holiday-color">#FFFFFF</span> 
+                                                                     </div>
+                                                                  </div>
+                                                               </div>
+                                                            </div>
+                                                         </div>
+                                                         <div class="tm1-row pb-0 align-items-center">
+                                                            <div class="col-left">
+                                                               <label>Link to redirect to</label>
+                                                               <img class="tt-info" src="assets/images/icon-info.svg" alt="Info" data-toggle="tooltip" data-placement="top" title="" data-original-title="Tooltip content goes here">
+                                                            </div>
+                                                            <div class="col-right">
+                                                               <div class="row-box-1">
+                                                                  <div class="rb1-right">
+                                                                     <div class="rb1-row flx-center mb-2">
+                                                                        <div class="rb-col mt-2">
+                                                                           <input class="ib-md" type="text" name="" placeholder="https://staging.tychesoftwares.com/woo_pinal/checkout/">
+                                                                           <p class="mt-2 mb-0">URL of the page where the popup should redirect. Leaving blank here will take the user to the Checkout page.</p>
+                                                                        </div>
+                                                                     </div>
+                                                                  </div>
+                                                               </div>
+                                                            </div>
+                                                         </div>
+                                                      </div>
+                                                   </div>
+                                                </div>
+                                             </div>
+                                             <div class="col-xl-8 col-lg-8 col-md-12 col-sm-12 col-12">
+                                                <div class="subscribe-body buy-subscribe-box text-center">
+                                                   <div class="subscribe-head">
+                                                      <h2 class="mb-0">We are sad to see you leave</h2>
+                                                   </div>
+                                                   <div class="subscribe-main">
+                                                      <p>There are some items in your cart. These will not last long. Please proceed to checkout to complete the purchase!</p>
+                                                      <button class="trietary-btn">Complete my order!</button>
+                                                   </div>
+                                                </div>
+                                             </div>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="save-btn mt-4 text-right">
+                        <button type="button">Save Settings</button>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <!-- Content Area End -->
+         <!-- Footer -->
+         <div class="ordd-footer">
+            <div class="container">
+               <div class="row">
+                  <div class="col-md-12">
+                     <div class="footer-wrap">
+                        <div class="ft-text">
+                           <p><a href="#">Need Support?</a> <strong>We’re always happy to help you.</strong></p>
+                           <p><a href="#">Please rate this plugin</a> <span class="rating">★★★★★</span> if this product helped you. <br>Thanks for your support</p>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <!-- Footer End -->
+      </div>
+      <!-- Optional JavaScript -- jQuery first, then Popper.js, then Bootstrap JS -->
+      <script src="assets/js/jquery-3.3.1.slim.min.js"></script>
+      <script src="assets/js/popper.min.js"></script>
+      <script src="assets/js/bootstrap.min.js"></script>
+      <script src="assets/js/bootstrap-tokenfield.js"></script>
+      <script src="assets/js/custom.js"></script>
+   </body>
+</html>

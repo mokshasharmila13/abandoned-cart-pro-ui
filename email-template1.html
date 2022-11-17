@@ -1,0 +1,260 @@
+<!doctype html>
+<html lang="en">
+   <head>
+      <!-- Required meta tags -->
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <!-- Bootstrap CSS -->
+      <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+      <link rel="stylesheet" href="assets/css/checkbox.css">
+      <link rel="stylesheet" href="assets/css/bootstrap-tokenfield.css">
+      <link rel="stylesheet" href="assets/css/theme-style.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css">
+      <script src="assets/js/choices.min.js"></script>
+      <title>Abandon Booking</title>
+   </head>
+   <body>
+      <div id="ordd-page" class="ordd-page">
+         <!-- Header -->
+         <div class="ordd-header">
+            <div class="container-fluid">
+               <div class="row">
+                  <div class="col-md-12">
+                     <div class="header-wrap">
+                        <div class="branding">
+                           <a href=""><img src="assets/images/ordd-logo.svg" alt="Logo" /></a>
+                        </div>
+                        <nav class="navbar navbar-expand-lg navbar-light ordd-navigation">
+                           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                              <span class="navbar-toggler-icon">
+                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                                    <path fill="none" d="M0 0h24v24H0z"/>
+                                    <path d="M3 4h18v2H3V4zm0 7h12v2H3v-2zm0 7h18v2H3v-2z" fill="rgba(255,255,255,1)"/>
+                                 </svg>
+                              </span>
+                           </button>
+                           <div class="collapse navbar-collapse" id="navbarNav">
+                              <ul class="navbar-nav menu nav-menu">
+                                 <li class="nav-item"><a class="nav-link" href="index.html">Dashboard</a></li>
+                                 <li class="nav-item"><a class="nav-link" href="order.html">Abandoned Orders</a></li>
+                                 <li class="nav-item active"><a class="nav-link" href="email-template1.html">Templates</a></li>
+                                 <li class="nav-item"><a class="nav-link" href="popup-template.html">Settings</a></li>
+                                 <li class="nav-item"><a class="nav-link" href="reminder-sent-email.html">Reminder Sent</a></li>
+                                <li class="nav-item"><a class="nav-link" href="product-report.html">Product Report</a></li>
+                                 <li class="nav-item"><a class="nav-link" href="faq&support.html">FAQ & Support</a></li>
+                              </ul>
+                           </div>
+                        </nav>
+                        <div class="ordd-version">
+                           <p class="ver-fig">Abandoned Cart</p>
+                           <p class="ver-fig">Version 5.7.2</p>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <!-- Header End -->
+         <!-- Content Area -->
+         <div class="ordd-content-area pb-5">
+            <div class="container fas-page-wrap">
+               <div class="row">
+                  <div class="col-md-12">
+                     <div class="ordd-page-head phw-btn justify-content-between">
+                        <div class="col-left">
+                           <h1>Email Template</h1>
+                           <p>Add/Edit Email Template goes here..</p>
+                        </div>
+                        <div class="col-right">
+                           <button type="button">Save Settings</button>
+                        </div>
+                     </div>
+                     <div class="obp-content">
+                        <div class="wbc-box">
+                           <div class="wbc-head">
+                              <h2>Add/Edit Email Template</h2>
+                           </div>
+                           <div class="wbc-content">
+                              <div class="tbl-mod-1">
+                                 <div class="tm1-row align-items-center">
+                                    <div class="col-left">
+                                       <label>Match Rules:</label>
+                                    </div>
+                                    <div class="col-right">
+                                       <div class="row-box-1">
+                                          <div class="rb1-left">
+                                             <img class="tt-info" src="assets/images/icon-info.svg" alt="Info" data-toggle="tooltip" data-placement="top" title="" data-original-title="Tooltip content goes here">
+                                          </div>
+                                          <div class="rb1-right">
+                                             <div class="rb1-row flx-center">
+                                                <div class="rb-col">
+                                                   <select class="ib-md">
+                                                      <option>Match all rule(s)</option>
+                                                      <option>Match all rule(s)</option>
+                                                   </select>
+                                                </div>
+                                             </div>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <div class="tm1-row d-block">
+                                    <div class="custom-integrations">
+                                       <div class="bts-content">
+                                          <div class="col-left mb-3">
+                                             <label>Rules:</label>
+                                          </div>
+                                          <div class="tbl-mod-2 flx-100">
+                                             <div class="tm2-inner-wrap tbl-responsive">
+                                                <table class="for-action" style="display: none;">
+                                                   <tbody>
+                                                      <tr>
+                                                         <td>
+                                                            <button type="button" class="btn btn-outline-primary blue-button btn-sm add-new">Save Setting</button>
+                                                            <a class="edit-delvry-sche edit" data-toggle="collapse" href="#" id="action-edit" role="button" aria-expanded="false" aria-controls="collapseExample" style="display: none;"> Edit</a>
+                                                            <!-- <a class="enable" title="Enable" style="display: none;">Enable</a> --> <a class="delete ml-2" title="Enable"><i class="fas fa-trash"></i></a>
+                                                         </td>
+                                                      </tr>
+                                                   </tbody>
+                                                </table>
+                                                <table class="table">
+                                                   <thead>
+                                                      <tr>
+                                                         <th>Rules Type</th>
+                                                         <th>Conditions</th>
+                                                         <th>Values</th>
+                                                         <th>Actions</th>
+                                                      </tr>
+                                                   </thead>
+                                                   <tbody>
+                                                      <tr class="cloned-row">
+                                                         <td>Coupons</td>
+                                                         <td>Includes any of</td>
+                                                         <td>Search for a Coupon...</td>
+                                                         <td>
+                                                            <a class="add" title="Update" data-toggle="tooltip">Update</a>
+                                                            <a class="template-edit" title="edit" data-toggle="tooltip">Edit</a>
+                                                            <a class="delete" title="Delete" data-toggle="tooltip">Delete</a>
+                                                         </td>
+                                                      </tr>
+                                                      <tr class="cloned-row">
+                                                         <td>Send Emails To</td>
+                                                         <td>Excludes any of</td>
+                                                         <td>Search for a Coupon...</td>
+                                                         <td>
+                                                            <a class="add" title="Update" data-toggle="tooltip">Update</a>
+                                                            <a class="template-edit" title="edit" data-toggle="tooltip">Edit</a>
+                                                            <a class="delete" title="Delete" data-toggle="tooltip">Delete</a>
+                                                         </td>
+                                                      </tr>
+                                                      <tr class="cloned-row">
+                                                         <td>Product Tags</td>
+                                                         <td>Excludes any of</td>
+                                                         <td>Products tAGS</td>
+                                                         <td>
+                                                            <a class="add" title="Update" data-toggle="tooltip">Update</a>
+                                                            <a class="template-edit" title="edit" data-toggle="tooltip">Edit</a>
+                                                            <a class="delete" title="Delete" data-toggle="tooltip">Delete</a>
+                                                         </td>
+                                                      </tr>
+                                                      <tr class="cloned-row">
+                                                         <td>Product Categories</td>
+                                                         <td>Includes any of</td>
+                                                         <td>Products Category</td>
+                                                         <td>
+                                                            <a class="add" title="Update" data-toggle="tooltip">Update</a>
+                                                            <a class="template-edit" title="edit" data-toggle="tooltip">Edit</a>
+                                                            <a class="delete" title="Delete" data-toggle="tooltip">Delete</a>
+                                                         </td>
+                                                      </tr>
+                                                      <tr class="cloned-row">
+                                                         <td>Payments Gateways</td>
+                                                         <td>Includes any of</td>
+                                                         <td>Check Payments</td>
+                                                         <td>
+                                                            <a class="add" title="Update" data-toggle="tooltip">Update</a>
+                                                            <a class="template-edit" title="edit" data-toggle="tooltip">Edit</a>
+                                                            <a class="delete" title="Delete" data-toggle="tooltip">Delete</a>
+                                                         </td>
+                                                      </tr>
+                                                      <tr class="cloned-row">
+                                                         <td>Number of Cart Items</td>
+                                                         <td>Equal to</td>
+                                                         <td>3</td>
+                                                         <td>
+                                                            <a class="add" title="Update" data-toggle="tooltip">Update</a>
+                                                            <a class="template-edit" title="edit" data-toggle="tooltip">Edit</a>
+                                                            <a class="delete" title="Delete" data-toggle="tooltip">Delete</a>
+                                                         </td>
+                                                      </tr>
+                                                      <tr class="cloned-row">
+                                                         <td>Product Tags</td>
+                                                         <td>Excludes any of</td>
+                                                         <td>Products tAGS</td>
+                                                         <td>
+                                                            <a class="add" title="Update" data-toggle="tooltip">Update</a>
+                                                            <a class="template-edit" title="edit" data-toggle="tooltip">Edit</a>
+                                                            <a class="delete" title="Delete" data-toggle="tooltip">Delete</a>
+                                                         </td>
+                                                      </tr>
+                                                      <tr class="cloned-row">
+                                                         <td>Product Categories</td>
+                                                         <td>Includes any of</td>
+                                                         <td>Products Category</td>
+                                                         <td>
+                                                            <a class="add" title="Update" data-toggle="tooltip">Update</a>
+                                                            <a class="template-edit" title="edit" data-toggle="tooltip">Edit</a>
+                                                            <a class="delete" title="Delete" data-toggle="tooltip">Delete</a>
+                                                         </td>
+                                                      </tr>
+                                                      <tr class="cloned-row">
+                                                         <td>Payments Gateways</td>
+                                                         <td>Includes any of</td>
+                                                         <td>Check Payments</td>
+                                                         <td>
+                                                            <a class="add" title="Update" data-toggle="tooltip">Update</a>
+                                                            <a class="template-edit" title="edit" data-toggle="tooltip">Edit</a>
+                                                            <a class="delete" title="Delete" data-toggle="tooltip">Delete</a>
+                                                         </td>
+                                                      </tr>
+                                                      <tr class="cloned-row">
+                                                         <td>Number of Cart Items</td>
+                                                         <td>Equal to</td>
+                                                         <td>3</td>
+                                                         <td>
+                                                            <a class="add" title="Update" data-toggle="tooltip">Update</a>
+                                                            <a class="template-edit" title="edit" data-toggle="tooltip">Edit</a>
+                                                            <a class="delete" title="Delete" data-toggle="tooltip">Delete</a>
+                                                         </td>
+                                                      </tr>
+                                                   </tbody>
+                                                </table>
+                                                <!-- <div class="add-more-link link-flx">
+                                                   <a class="al-link" data-toggle="collapse" href="#col_opt_id_1" role="button" aria-expanded="false" aria-controls="col_opt_id_1"><img src="assets/images/icon-plus.svg" alt="Icon"> Add More</a>
+                                                   </div> -->
+                                             </div>
+                                             <div class="add-more-link">
+                                                <a class="al-link add_new_template_range" id="add_product_availability"><img src="assets/images/icon-plus.svg" alt="Icon" /> Add Rule</a>
+                                             </div>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <!-- Content Area End -->
+      </div>
+      <!-- Optional JavaScript -- jQuery first, then Popper.js, then Bootstrap JS -->
+      <script src="assets/js/jquery-3.3.1.slim.min.js"></script>
+      <script src="assets/js/popper.min.js"></script>
+      <script src="assets/js/bootstrap.min.js"></script>
+      <script src="assets/js/bootstrap-tokenfield.js"></script>
+      <script src="assets/js/custom.js"></script>
+   </body>
+</html>

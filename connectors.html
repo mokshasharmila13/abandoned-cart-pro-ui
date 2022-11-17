@@ -1,0 +1,540 @@
+<!doctype html>
+<html lang="en">
+   <head>
+      <!-- Required meta tags -->
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <!-- Bootstrap CSS -->
+      <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+      <link rel="stylesheet" href="assets/css/checkbox.css">
+      <link rel="stylesheet" href="assets/css/bootstrap-tokenfield.css">
+      <link rel="stylesheet" href="assets/css/theme-style.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css">
+      <script src="assets/js/choices.min.js"></script>
+      <title>Abandon Booking</title>
+   </head>
+   <body>
+      <div id="ordd-page" class="ordd-page">
+         <!-- Header -->
+         <div class="ordd-header">
+            <div class="container-fluid">
+               <div class="row">
+                  <div class="col-md-12">
+                     <div class="header-wrap">
+                        <div class="branding">
+                           <a href=""><img src="assets/images/ordd-logo.svg" alt="Logo" /></a>
+                        </div>
+                        <nav class="navbar navbar-expand-lg navbar-light ordd-navigation">
+                           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                              <span class="navbar-toggler-icon">
+                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                                    <path fill="none" d="M0 0h24v24H0z"/>
+                                    <path d="M3 4h18v2H3V4zm0 7h12v2H3v-2zm0 7h18v2H3v-2z" fill="rgba(255,255,255,1)"/>
+                                 </svg>
+                              </span>
+                           </button>
+                           <div class="collapse navbar-collapse" id="navbarNav">
+                              <ul class="navbar-nav menu nav-menu">
+                                 <li class="nav-item"><a class="nav-link" href="index.html">Dashboard</a></li>
+                                 <li class="nav-item "><a class="nav-link" href="">Abandoned Orders</a></li>
+                                                               <li class="nav-item"><a class="nav-link" href="add-edit-email-template.html">Templates</a></li>
+                                 <li class="nav-item active" ><a class="nav-link" href="connectors.html">Settings</a></li>
+                                 <li class="nav-item"><a class="nav-link" href="reminder-sent-email.html">Reminder Sent</a></li>
+                                <li class="nav-item"><a class="nav-link" href="product-report.html">Product Report</a></li>
+                                 <li class="nav-item"><a class="nav-link" href="faq&support.html">FAQ & Support</a></li>
+                              </ul>
+                           </div>
+                        </nav>
+                        <div class="ordd-version">
+                           <p class="ver-fig">Abandoned Cart</p>
+                           <p class="ver-fig">Version 5.7.2</p>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <!-- Header End -->
+         <!-- Content Area -->
+         <div class="ordd-content-area">
+            <div class="container cw-full secondary-nav">
+               <div class="row">
+                  <div class="col-md-12">
+                     <!-- Secondary Navigation -->
+                     <div class="secondary-nav-wrap">
+                        <ul>
+                           <li><a href="">General</a></li>
+                           <li><a href="popup-template.html">Popup Templates</a></li>
+                           <li><a href="facebook-sms.html">Facebook Messenger</a></li>
+                           <li><a href="sms-notification.html">SMS</a></li>
+                           <li class="current-menu-item"><a href="connectors.html">Connectors</a></li>
+                           <li><a href="email-template1.html">Email Reports</a></li>
+                           <li><a href="license.html">License</a></li>
+                        </ul>
+                     </div>
+                     <!-- Secondary Navigation - End -->
+                  </div>
+               </div>
+            </div>
+            <div class="container fas-page-wrap">
+               <div class="row">
+                  <div class="col-md-12">
+                     <div class="ordd-page-head pb-0">
+                        <div class="col-left">
+                           <p class="mb-2">Change settings for sending email notifications to Customers, to Admin, Tracking Coupons etc.</p>
+                           <h1>Connectors</h1>
+                           <p class="mb-2">Please note that the plugin will no longer send reminder emails to abandoned carts if integration is enabled with a third party CRM/email marketing tool. If you still wish to send reminder emails with the integration enabled, please get in touch with support at Tyche Softwares.</p>
+                           <div class="booking-links-left">
+                              <a class="black-text" href="">All <span>(10)</span></a> | <a href="">Active <span>(05)</span></a> | <a href="">Inactive <span>(05)</span></a>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="row">
+                  <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-12">
+                     <div class="connectors-box">
+                        <div class="connectors-ico mb-2">
+                           <i class="far fa-envelope"></i>
+                        </div>
+                        <h3 class="mb-1">Custom SMTP server</h3>
+                        <p class="mb-3">Use a custom SMTP server to </br>send emails to recover </br>abandoned carts.</p>
+                        <div class="connectors-btn">
+                           <button class="trietary-btn reverse" data-toggle="modal" data-target="#connect-popup" type="button">Connect</button>
+                        </div>
+                        <div class="connectors-hover d-flex justify-content-between align-items-center">
+                           <div class="connectors-left">
+                              <a href=""><i class="fas fa-times"></i> Disconnect</a>
+                           </div>
+                           <div class="connectors-right">
+                              <button class="trietary-btn reverse" type="button" data-toggle="modal" data-target="#connect-popup">Settings</button>
+                              <button class="trietary-btn" type="button">Sync</button>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-12">
+                     <div class="connectors-box">
+                        <div class="connectors-ico mb-2">
+                           <img src="assets/images/logo1.png" alt="">
+                        </div>
+                        <h3 class="mb-1">ActiveCampaign</h3>
+                        <p class="mb-3">Send emails and abandoned carts <br>collected from the plugin to <br>ActiveCampaign.</p>
+                        <div class="connectors-btn">
+                           <button class="trietary-btn reverse" data-toggle="modal" data-target="#connect-popup" type="button">Connect</button>
+                        </div>
+                        <div class="connectors-hover d-flex justify-content-between align-items-center">
+                           <div class="connectors-left">
+                              <a href=""><i class="fas fa-times"></i> Disconnect</a>
+                           </div>
+                           <div class="connectors-right">
+                              <button class="trietary-btn reverse" type="button" data-toggle="modal" data-target="#connect-popup">Settings</button>
+                              <button class="trietary-btn" type="button">Sync</button>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-12">
+                     <div class="connectors-box">
+                        <div class="connectors-ico mb-2">
+                           <img src="assets/images/logo2.png" alt="">
+                        </div>
+                        <h3 class="mb-1">Drip</h3>
+                        <p class="mb-3">Send emails and abandoned <br>carts collected from the plugin <br>to Drip.</p>
+                        <div class="connectors-btn">
+                           <button class="trietary-btn reverse" data-toggle="modal" data-target="#connect-popup" type="button">Connect</button>
+                        </div>
+                        <div class="connectors-hover d-flex justify-content-between align-items-center">
+                           <div class="connectors-left">
+                              <a href=""><i class="fas fa-times"></i> Disconnect</a>
+                           </div>
+                           <div class="connectors-right">
+                              <button class="trietary-btn reverse" type="button" data-toggle="modal" data-target="#connect-popup">Settings</button>
+                              <button class="trietary-btn" type="button">Sync</button>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-12">
+                     <div class="connectors-box">
+                        <div class="connectors-ico mb-2">
+                           <img src="assets/images/logo3.png" alt="">
+                        </div>
+                        <h3 class="mb-1">Fluentcrm</h3>
+                        <p class="mb-3">Send emails and abandoned <br>carts collected from the plugin <br>to Fluentcrm.</p>
+                        <div class="connectors-btn">
+                           <button class="trietary-btn reverse" data-toggle="modal" data-target="#connect-popup" type="button">Connect</button>
+                        </div>
+                        <div class="connectors-hover d-flex justify-content-between align-items-center">
+                           <div class="connectors-left">
+                              <a href=""><i class="fas fa-times"></i> Disconnect</a>
+                           </div>
+                           <div class="connectors-right">
+                              <button class="trietary-btn reverse" type="button" data-toggle="modal" data-target="#connect-popup">Settings</button>
+                              <button class="trietary-btn" type="button">Sync</button>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-12">
+                     <div class="connectors-box">
+                        <div class="connectors-ico mb-2">
+                           <i class="far fa-envelope"></i>
+                        </div>
+                        <h3 class="mb-1">HubSpot</h3>
+                        <p class="mb-3">Send emails and abandoned <br>carts collected from the plugin <br>to HubSpot.</p>
+                        <div class="connectors-btn">
+                           <button class="trietary-btn reverse" data-toggle="modal" data-target="#connect-popup" type="button">Connect</button>
+                        </div>
+                        <div class="connectors-hover d-flex justify-content-between align-items-center">
+                           <div class="connectors-left">
+                              <a href=""><i class="fas fa-times"></i> Disconnect</a>
+                           </div>
+                           <div class="connectors-right">
+                              <button class="trietary-btn reverse" type="button" data-toggle="modal" data-target="#connect-popup">Settings</button>
+                              <button class="trietary-btn" type="button">Sync</button>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-12">
+                     <div class="connectors-box">
+                        <div class="connectors-ico mb-2">
+                           <i class="far fa-envelope"></i>
+                        </div>
+                        <h3 class="mb-1">Klaviyo</h3>
+                        <p class="mb-3">Send emails and abandoned <br>carts collected from the plugin <br>to HubSpot.</p>
+                        <div class="connectors-btn">
+                           <button class="trietary-btn reverse" data-toggle="modal" data-target="#connect-popup" type="button">Connect</button>
+                        </div>
+                        <div class="connectors-hover d-flex justify-content-between align-items-center">
+                           <div class="connectors-left">
+                              <a href=""><i class="fas fa-times"></i> Disconnect</a>
+                           </div>
+                           <div class="connectors-right">
+                              <button class="trietary-btn reverse" type="button" data-toggle="modal" data-target="#connect-popup">Settings</button>
+                              <button class="trietary-btn" type="button">Sync</button>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-12">
+                     <div class="connectors-box">
+                        <div class="connectors-ico mb-2">
+                           <i class="far fa-envelope"></i>
+                        </div>
+                        <h3 class="mb-1">Mailchimp</h3>
+                        <p class="mb-3">Send emails and abandoned <br>carts collected from the plugin <br>to HubSpot.</p>
+                        <div class="connectors-btn">
+                           <button class="trietary-btn reverse" data-toggle="modal" data-target="#connect-popup" type="button">Connect</button>
+                        </div>
+                        <div class="connectors-hover d-flex justify-content-between align-items-center">
+                           <div class="connectors-left">
+                              <a href=""><i class="fas fa-times"></i> Disconnect</a>
+                           </div>
+                           <div class="connectors-right">
+                              <button class="trietary-btn reverse" type="button" data-toggle="modal" data-target="#connect-popup">Settings</button>
+                              <button class="trietary-btn" type="button">Sync</button>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-12">
+                     <div class="connectors-box">
+                        <div class="connectors-ico mb-2">
+                           <i class="far fa-envelope"></i>
+                        </div>
+                        <h3 class="mb-1">Mailjet</h3>
+                        <p class="mb-3">Send emails and abandoned <br>carts collected from the plugin <br>to HubSpot.</p>
+                        <div class="connectors-btn">
+                           <button class="trietary-btn reverse" data-toggle="modal" data-target="#connect-popup" type="button">Connect</button>
+                        </div>
+                        <div class="connectors-hover d-flex justify-content-between align-items-center">
+                           <div class="connectors-left">
+                              <a href=""><i class="fas fa-times"></i> Disconnect</a>
+                           </div>
+                           <div class="connectors-right">
+                              <button class="trietary-btn reverse" type="button" data-toggle="modal" data-target="#connect-popup">Settings</button>
+                              <button class="trietary-btn" type="button">Sync</button>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-12">
+                     <div class="connectors-box">
+                        <div class="connectors-ico mb-2">
+                           <i class="far fa-envelope"></i>
+                        </div>
+                        <h3 class="mb-1">Sendinblue</h3>
+                        <p class="mb-3">Send emails and abandoned <br>carts collected from the plugin <br>to HubSpot.</p>
+                        <div class="connectors-btn">
+                           <button class="trietary-btn reverse" data-toggle="modal" data-target="#connect-popup" type="button">Connect</button>
+                        </div>
+                        <div class="connectors-hover d-flex justify-content-between align-items-center">
+                           <div class="connectors-left">
+                              <a href=""><i class="fas fa-times"></i> Disconnect</a>
+                           </div>
+                           <div class="connectors-right">
+                              <button class="trietary-btn reverse" type="button" data-toggle="modal" data-target="#connect-popup">Settings</button>
+                              <button class="trietary-btn" type="button">Sync</button>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-12">
+                     <div class="connectors-box">
+                        <div class="connectors-ico mb-2">
+                           <i class="far fa-envelope"></i>
+                        </div>
+                        <h3 class="mb-1">WP Fusion</h3>
+                        <p class="mb-3">Send emails and abandoned <br>carts collected from the plugin <br>to HubSpot.</p>
+                        <div class="connectors-btn">
+                           <button class="trietary-btn reverse" data-toggle="modal" data-target="#connect-popup" type="button">Connect</button>
+                        </div>
+                        <div class="connectors-hover d-flex justify-content-between align-items-center">
+                           <div class="connectors-left">
+                              <a href=""><i class="fas fa-times"></i> Disconnect</a>
+                           </div>
+                           <div class="connectors-right">
+                              <button class="trietary-btn reverse" type="button" data-toggle="modal" data-target="#connect-popup">Settings</button>
+                              <button class="trietary-btn" type="button">Sync</button>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <!-- Content Area End -->
+         <!-- Footer -->
+         <div class="ordd-footer">
+            <div class="container">
+               <div class="row">
+                  <div class="col-md-12">
+                     <div class="footer-wrap">
+                        <div class="ft-text">
+                           <p><a href="#">Need Support?</a> <strong>We’re always happy to help you.</strong></p>
+                           <p><a href="#">Please rate this plugin</a> <span class="rating">★★★★★</span> if this product helped you. <br>Thanks for your support</p>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <!-- Footer End -->
+      </div>
+      <!-- Modal -->
+      <div class="modal fade" id="connect-popup" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+         <div class="modal-dialog modal-dialog-centered  modal-lg" role="document">
+            <div class="modal-content">
+               <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">Connect with Custom SMTP server</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                  </button>
+               </div>
+               <div class="modal-body">
+                  <div class="custom-popup">
+                     <div class="tbl-mod-1">
+                        <div class="tm1-row align-items-center">
+                           <div class="col-left">
+                              <label>Enter API URL:</label>
+                           </div>
+                           <div class="col-right">
+                              <div class="row-box-1">
+                                 <div class="rb1-right">
+                                    <div class="rb1-row flx-center">
+                                       <div class="rb-col">
+                                          <input class="ib-md" type="text" name="" placeholder="Enter API URL">
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="tm1-row align-items-center">
+                           <div class="col-left">
+                              <label>Enter API Key:</label>
+                           </div>
+                           <div class="col-right">
+                              <div class="row-box-1">
+                                 <div class="rb1-right">
+                                    <div class="rb1-row flx-center">
+                                       <div class="rb-col">
+                                          <input class="ib-md" type="text" name="" placeholder="Enter API Key">
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="tm1-row align-items-center">
+                           <div class="col-left">
+                              <label>SMTP Host:</label>
+                           </div>
+                           <div class="col-right">
+                              <div class="row-box-1">
+                                 <div class="rb1-right">
+                                    <div class="rb1-row flx-center">
+                                       <div class="rb-col">
+                                          <input class="ib-md" type="text" name="" placeholder="Enter SMTP Host">
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="tm1-row align-items-center">
+                           <div class="col-left">
+                              <label>SMTP Port:</label>
+                           </div>
+                           <div class="col-right">
+                              <div class="row-box-1">
+                                 <div class="rb1-right">
+                                    <div class="rb1-row flx-center">
+                                       <div class="rb-col">
+                                          <input class="ib-md" type="text" name="" placeholder="SMTP Port">
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="tm1-row align-items-center">
+                           <div class="col-left">
+                              <label>Block Pricing:</label>
+                           </div>
+                           <div class="col-right">
+                              <div class="rc-flx-wrap flx-aln-center ro-wrap">
+                                 <img class="tt-info" src="assets/images/icon-info.svg" alt="Info" data-toggle="tooltip" data-placement="top" title="Tooltip content goes here">
+                                 <div class="rb-flx-style">
+                                    <div class="el-radio el-radio-green">
+                                       <input type="radio" name="integration_type" id="none" value="1">
+                                       <label class="el-radio-style" for="none"></label>
+                                    </div>
+                                    <label for="0_1">None</label>
+                                 </div>
+                                 <div class="rb-flx-style">
+                                    <div class="el-radio el-radio-green">
+                                       <input type="radio" name="integration_type" id="ssl" value="2" checked="">
+                                       <label class="el-radio-style" for="ssl"></label>
+                                    </div>
+                                    <label for="0_2">SSL</label>
+                                 </div>
+                                 <div class="rb-flx-style">
+                                    <div class="el-radio el-radio-green">
+                                       <input type="radio" name="integration_type" id="tls" value="2">
+                                       <label class="el-radio-style" for="tls"></label>
+                                    </div>
+                                    <label for="0_2">TLS</label>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="tm1-row align-items-center">
+                           <div class="col-left">
+                              <label>SMTP AutoTLS:</label>
+                           </div>
+                           <div class="col-right">
+                              <div class="row-box-1">
+                                 <div class="rb1-right">
+                                    <div class="rb1-row flx-center">
+                                       <img class="tt-info" src="assets/images/icon-info.svg" alt="Info" data-toggle="tooltip" data-placement="top" title="Tooltip content goes here">
+                                       <label class="el-switch el-switch-green">
+                                       <input type="checkbox" name="cb_opt_nm_23" value="cb_opt_val_23" checked="">
+                                       <span class="el-switch-style"></span>
+                                       </label>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="tm1-row align-items-center">
+                           <div class="col-left">
+                              <label>SMTP Authentication:</label>
+                           </div>
+                           <div class="col-right">
+                              <div class="row-box-1">
+                                 <div class="rb1-right">
+                                    <div class="rb1-row flx-center">
+                                       <img class="tt-info" src="assets/images/icon-info.svg" alt="Info" data-toggle="tooltip" data-placement="top" title="Tooltip content goes here">
+                                       <label class="el-switch el-switch-green">
+                                       <input type="checkbox" name="cb_opt_nm_23" value="cb_opt_val_23" checked="">
+                                       <span class="el-switch-style"></span>
+                                       </label>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="tm1-row align-items-center">
+                           <div class="col-left">
+                              <label>SMTP Username:</label>
+                           </div>
+                           <div class="col-right">
+                              <div class="row-box-1">
+                                 <div class="rb1-right">
+                                    <div class="rb1-row flx-center">
+                                       <div class="rb-col">
+                                          <input class="ib-md" type="text" name="" placeholder="Enter SMTP Username">
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="tm1-row align-items-center">
+                           <div class="col-left">
+                              <label>SMTP Password:</label>
+                           </div>
+                           <div class="col-right">
+                              <div class="row-box-1">
+                                 <div class="rb1-right">
+                                    <div class="rb1-row flx-center">
+                                       <div class="rb-col">
+                                          <input class="ib-md" type="text" name="" placeholder="Lorem@123">
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="tm1-row">
+                           <div class="col-left">
+                              <label class="mt-2">Send a test Email to:</label>
+                           </div>
+                           <div class="col-right">
+                              <div class="row-box-1">
+                                 <div class="rb1-right">
+                                    <div class="rb1-row flx-center">
+                                       <div class="rb-col">
+                                          <input class="ib-md" type="text" name="" placeholder="Lorem@gmail.com">
+                                       </div>
+                                    </div>
+                                    <div class="test_conection mt-3">
+                                       <a href="">
+                                       Send a Test Email <i class="fas fa-spinner ml-1"></i>
+                                       </a>
+                                       <span class="d-block mt-1" style="color: #D72C0D;">Please enter a valid email-id</span>
+                                       <div class="rb-col mt-2">
+                                          <a href="#" class="secondary-btn pl-ss-btn">Save</a>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- Optional JavaScript -- jQuery first, then Popper.js, then Bootstrap JS -->
+      <script src="assets/js/jquery-3.3.1.slim.min.js"></script>
+      <script src="assets/js/popper.min.js"></script>
+      <script src="assets/js/bootstrap.min.js"></script>
+      <script src="assets/js/bootstrap-tokenfield.js"></script>
+      <script src="assets/js/custom.js"></script>
+   </body>
+</html>

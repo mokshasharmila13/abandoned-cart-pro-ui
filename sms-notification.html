@@ -64,8 +64,8 @@
                      <div class="secondary-nav-wrap">
                         <ul>
                            <li><a href="email-template3.html">Email Templates</a></li>
-                           <li><a href="sms-notification.html">SMS Notifications</a></li>
-                           <li class="current-menu-item"><a href="facebook-sms.html">Facebook Messenger Templates</a></li>
+                           <li class="current-menu-item"><a href="sms-notification.html">SMS Notifications</a></li>
+                           <li><a href="facebook-sms.html">Facebook Messenger Templates</a></li>
                         </ul>
                      </div>
                      <!-- Secondary Navigation - End -->
@@ -75,11 +75,13 @@
             <div class="container fas-page-wrap">
                <div class="row">
                   <div class="col-md-12">
-                     <div class="ordd-page-head phw-btn justify-content-between pb-0">
+                     <div class="ordd-page-head phw-btn pb-0 justify-content-between">
                         <div class="col-left">
-                           <p class="mb-3">Add Facebook Messenger templates to be sent at different intervals to maximize the possibility of recovering your abandoned carts.</p>
+                           <!-- <h1>Email Template</h1> -->
+                           <p class="mb-3">Add SMS Notifications at different intervals to maximize the possibility of recovering your abandoned carts</p>
+                           <p class="mb-3"><b>Edit Instructions:</b> Please click on the Text Message to edit it. Then click on the Save button. You can edit multiple text messages at once.</p>
                            <div class="email-btn mb-4">
-                              <button href="" class="trietary-btn reverse" data-toggle="modal" data-target="#Fb-2"><i class="fas fa-plus"></i> Add New Templates</button>
+                              <button href="" class="trietary-btn reverse"><i class="fas fa-plus"></i> Add New Text Message</button>
                            </div>
                         </div>
                      </div>
@@ -92,6 +94,9 @@
                                     <option>Edit</option>
                                  </select>
                                  <button class="trietary-btn reverse" type="button">Apply</button>
+                              </div>
+                              <div class="action-url">
+                                 <p class="m-0">5 items</p>
                               </div>
                            </div>
                         </div>
@@ -107,35 +112,39 @@
                                              <thead>
                                                 <tr>
                                                    <th>
-                                                      <div class="custom-control custom-checkbox mr-3">
+                                                      <div class="custom-control custom-checkbox">
                                                          <input type="checkbox" class="custom-control-input" id="customCheck1">
                                                          <label class="custom-control-label" for="customCheck1"></label>
                                                       </div>
                                                    </th>
                                                    <th>ID</th>
-                                                   <th>Text</th>
-                                                   <th>Template send time after abandonment</th>
+                                                   <th>Text Message</th>
+                                                   <th>Coupon Code</th>
+                                                   <th>Sent After Set Time</th>
                                                    <th>Link Rate(%)</th>
                                                    <th>Conversion Rate(%)</th>
                                                    <th>Start Sending</th>
+                                                   <th class="action-width">Action</th>
                                                 </tr>
                                              </thead>
                                              <tbody>
-                                                <tr class="cloned-row">
+                                                <tr class="cloned-row align-top">
                                                    <td>
-                                                      <div class="custom-control custom-checkbox mr-3">
+                                                      <div class="custom-control custom-checkbox">
                                                          <input type="checkbox" class="custom-control-input" id="customCheck2">
                                                          <label class="custom-control-label" for="customCheck2"></label>
                                                       </div>
                                                    </td>
                                                    <td>1</td>
+                                                   <td style="width: 340px;">Hey {{user.name}}, I noticed y.</td>
                                                    <td>
-                                                      Hey there, We noticed that you left </br>some great products in your cart.
-                                                      <div class="edit-action">
-                                                         <a class="green-text" href="">Edit </a> <a href="">Duplicate</a> <a class="red-text" href="">Delete</a>
-                                                      </div>
+                                                      <select class="ib-sm" name="weekday" id="maximum-orders">
+                                                         <option value="05">Select Coupon </option>
+                                                         <option value="15">SALE10</option>
+                                                         <option value="20">DISCOUNT</option>
+                                                      </select>
                                                    </td>
-                                                   <td>30 minutes</td>
+                                                   <td>30 Minutes <br>After Abandonment</td>
                                                    <td>0%</td>
                                                    <td>0%</td>
                                                    <td>
@@ -144,22 +153,29 @@
                                                       <span class="el-switch-style"></span>
                                                       </label>
                                                    </td>
-                                                </tr>
-                                                <tr class="cloned-row">
                                                    <td>
-                                                      <div class="custom-control custom-checkbox mr-3">
+                                                      <a class="add" title="Update" data-toggle="tooltip">Update</a>
+                                                      <a class="sms-notification-edit" title="edit" data-toggle="tooltip">Edit</a>
+                                                      <a class="delete" title="Delete" data-toggle="tooltip">Delete</a>
+                                                   </td>
+                                                </tr>
+                                                <tr class="cloned-row align-top">
+                                                   <td>
+                                                      <div class="custom-control custom-checkbox">
                                                          <input type="checkbox" class="custom-control-input" id="customCheck3">
                                                          <label class="custom-control-label" for="customCheck3"></label>
                                                       </div>
                                                    </td>
                                                    <td>2</td>
+                                                   <td>Hey {{user.name}}, I noticed y.</td>
                                                    <td>
-                                                      Hey there, We noticed that you left </br>some great products in your cart.
-                                                      <div class="edit-action">
-                                                         <a class="green-text" href="">Edit </a> <a href="">Duplicate</a> <a class="red-text" href="">Delete</a>
-                                                      </div>
+                                                      <select class="ib-sm" name="weekday" id="maximum-orders">
+                                                         <option value="05">Select Coupon </option>
+                                                         <option value="15">SALE10</option>
+                                                         <option value="20">DISCOUNT</option>
+                                                      </select>
                                                    </td>
-                                                   <td>5 Hour</td>
+                                                   <td>30 Minutes <br>After Abandonment</td>
                                                    <td>0%</td>
                                                    <td>0%</td>
                                                    <td>
@@ -168,46 +184,122 @@
                                                       <span class="el-switch-style"></span>
                                                       </label>
                                                    </td>
-                                                </tr>
-                                                <tr class="cloned-row">
                                                    <td>
-                                                      <div class="custom-control custom-checkbox mr-3">
+                                                      <a class="add" title="Update" data-toggle="tooltip">Update</a>
+                                                      <a class="sms-notification-edit" title="edit" data-toggle="tooltip">Edit</a>
+                                                      <a class="delete" title="Delete" data-toggle="tooltip">Delete</a>
+                                                   </td>
+                                                </tr>
+                                                <tr class="cloned-row align-top">
+                                                   <td>
+                                                      <div class="custom-control custom-checkbox">
                                                          <input type="checkbox" class="custom-control-input" id="customCheck4">
                                                          <label class="custom-control-label" for="customCheck4"></label>
                                                       </div>
                                                    </td>
                                                    <td>3</td>
+                                                   <td>Hey {{user.name}}, I noticed y.</td>
                                                    <td>
-                                                      Hey there, We noticed that you left </br>some great products in your cart.
-                                                      <div class="edit-action">
-                                                         <a class="green-text" href="">Edit </a> <a href="">Duplicate</a> <a class="red-text" href="">Delete</a>
-                                                      </div>
+                                                      <select class="ib-sm" name="weekday" id="maximum-orders">
+                                                         <option value="05">Select Coupon </option>
+                                                         <option value="15">SALE10</option>
+                                                         <option value="20">DISCOUNT</option>
+                                                      </select>
                                                    </td>
-                                                   <td>8 Hour</td>
+                                                   <td>30 Minutes <br>After Abandonment</td>
                                                    <td>0%</td>
                                                    <td>0%</td>
                                                    <td>
                                                       <label class="el-switch el-switch-green">
-                                                      <input type="checkbox" name="cb_opt_nm_23" value="cb_opt_val_23">
+                                                      <input type="checkbox" name="cb_opt_nm_23" value="cb_opt_val_23" checked="">
                                                       <span class="el-switch-style"></span>
                                                       </label>
+                                                   </td>
+                                                   <td>
+                                                      <a class="add" title="Update" data-toggle="tooltip">Update</a>
+                                                      <a class="sms-notification-edit" title="edit" data-toggle="tooltip">Edit</a>
+                                                      <a class="delete" title="Delete" data-toggle="tooltip">Delete</a>
+                                                   </td>
+                                                </tr>
+                                                <tr class="cloned-row align-top">
+                                                   <td>
+                                                      <div class="custom-control custom-checkbox">
+                                                         <input type="checkbox" class="custom-control-input" id="customCheck5">
+                                                         <label class="custom-control-label" for="customCheck5"></label>
+                                                      </div>
+                                                   </td>
+                                                   <td>4</td>
+                                                   <td>Hey {{user.name}}, I noticed y.</td>
+                                                   <td>
+                                                      <select class="ib-sm" name="weekday" id="maximum-orders">
+                                                         <option value="05">Select Coupon </option>
+                                                         <option value="15">SALE10</option>
+                                                         <option value="20">DISCOUNT</option>
+                                                      </select>
+                                                   </td>
+                                                   <td>30 Minutes <br>After Abandonment</td>
+                                                   <td>0%</td>
+                                                   <td>0%</td>
+                                                   <td>
+                                                      <label class="el-switch el-switch-green">
+                                                      <input type="checkbox" name="cb_opt_nm_23" value="cb_opt_val_23" checked="">
+                                                      <span class="el-switch-style"></span>
+                                                      </label>
+                                                   </td>
+                                                   <td>
+                                                      <a class="add" title="Update" data-toggle="tooltip">Update</a>
+                                                      <a class="sms-notification-edit" title="edit" data-toggle="tooltip">Edit</a>
+                                                      <a class="delete" title="Delete" data-toggle="tooltip">Delete</a>
+                                                   </td>
+                                                </tr>
+                                                <tr class="cloned-row align-top">
+                                                   <td>
+                                                      <div class="custom-control custom-checkbox">
+                                                         <input type="checkbox" class="custom-control-input" id="customCheck6">
+                                                         <label class="custom-control-label" for="customCheck6"></label>
+                                                      </div>
+                                                   </td>
+                                                   <td>5</td>
+                                                   <td>Hey {{user.name}}, I noticed y.</td>
+                                                   <td>
+                                                      <select class="ib-sm" name="weekday" id="maximum-orders">
+                                                         <option value="05">Select Coupon </option>
+                                                         <option value="15">SALE10</option>
+                                                         <option value="20">DISCOUNT</option>
+                                                      </select>
+                                                   </td>
+                                                   <td>30 Minutes <br>After Abandonment</td>
+                                                   <td>0%</td>
+                                                   <td>0%</td>
+                                                   <td>
+                                                      <label class="el-switch el-switch-green">
+                                                      <input type="checkbox" name="cb_opt_nm_23" value="cb_opt_val_23" checked="">
+                                                      <span class="el-switch-style"></span>
+                                                      </label>
+                                                   </td>
+                                                   <td>
+                                                      <a class="add" title="Update" data-toggle="tooltip">Update</a>
+                                                      <a class="sms-notification-edit" title="edit" data-toggle="tooltip">Edit</a>
+                                                      <a class="delete" title="Delete" data-toggle="tooltip">Delete</a>
                                                    </td>
                                                 </tr>
                                              </tbody>
                                              <thead>
                                                 <tr>
                                                    <th>
-                                                      <div class="custom-control custom-checkbox mr-3">
-                                                         <input type="checkbox" class="custom-control-input" id="customCheck5">
-                                                         <label class="custom-control-label" for="customCheck5"></label>
+                                                      <div class="custom-control custom-checkbox">
+                                                         <input type="checkbox" class="custom-control-input" id="customCheck7">
+                                                         <label class="custom-control-label" for="customCheck7"></label>
                                                       </div>
                                                    </th>
                                                    <th>ID</th>
-                                                   <th>Text</th>
-                                                   <th>Template send time after abandonment</th>
+                                                   <th>Text Message</th>
+                                                   <th>Coupon Code</th>
+                                                   <th>Sent After Set Time</th>
                                                    <th>Link Rate(%)</th>
                                                    <th>Conversion Rate(%)</th>
                                                    <th>Start Sending</th>
+                                                   <th class="action-width">Action</th>
                                                 </tr>
                                              </thead>
                                           </table>
@@ -215,6 +307,9 @@
                                              <a class="al-link" data-toggle="collapse" href="#col_opt_id_1" role="button" aria-expanded="false" aria-controls="col_opt_id_1"><img src="assets/images/icon-plus.svg" alt="Icon"> Add More</a>
                                              </div> -->
                                        </div>
+                                       <!-- <div class="add-more-link">
+                                          <a class="al-link add_sms_notification" id="add_product_availability"><img src="assets/images/icon-plus.svg" alt="Icon" /> Add Rule</a>
+                                          </div> -->
                                     </div>
                                  </div>
                               </div>
@@ -223,13 +318,16 @@
                            </div>
                         </div>
                      </div>
-                     <div class="tm1-row align-items-center bdr-0 pt-0 delvry-sch-bottom mb-4">
+                     <div class="tm1-row align-items-center bdr-0 pt-0 delvry-sch-bottom mb-0">
                         <div class="abulk-box pt-0 ">
                            <select class="ib-small">
                               <option>Bulk Action</option>
                               <option>Edit</option>
                            </select>
                            <button class="trietary-btn reverse" type="button">Apply</button>
+                        </div>
+                        <div class="action-url">
+                           <p class="m-0">5 items</p>
                         </div>
                      </div>
                   </div>
@@ -252,59 +350,6 @@
             </div>
          </div>
       </div>
-       <!-- Modal -->
-       <div class="modal fade" id="Fb-2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-         <div class="modal-dialog modal-dialog-centered  modal-lg" role="document">
-            <div class="modal-content">
-               <div class="modal-header" style="background-color: #58419c;">
-                  <h5 class="modal-title d-flex" id="exampleModalLabel" style="color:#fff">Abandoned Cart Template</h5>
-                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                  <span aria-hidden="true" style="color: #fff;">&times;</span>
-                  </button>
-               </div>
-
-               <div class="modal-body">
-                  <div class="custom-popup">
-                     <div class="col-lef">
-                        <div class="rc-flx-wrap flx-aln-center">
-                           <label style="padding-right:90px ;">Send</label>
-                           <select class="ib-sm ib-small">
-                              <option>1</option>
-                              <option>2</option>
-                              <option>3</option>
-                              <option>4</option>
-                              <option>5</option>
-                              </select>
-                           <select class="ib-sm ib-small">
-                              <option>Minuts(s)</option>
-                              <option>Hour(s)</option>
-                              <option>Day(s)</option>
-                           </select>
-                        </div>
-                     
-                        <div class="col-left" style="margin-top:10px ;">
-                           <label style="padding-right:70px ;">Subject</label>
-                           <input class="ib-lg" type="text" name="" placeholder="">
-                        </div>
-                        <div class="col-left" style="margin-top:10px ;">
-                              <label style="padding-right:20px ;">Checkout Label</label>
-                              <input class="ib-lg" type="text" name="" placeholder="">
-                        </div>
-                        <div style="text-align:right ;">Preview Part as shown in admin</div>
-                        <div class="col-left" style="margin-top: 10px ;">
-                           <label style="padding-right:05px ;">Unsubscribe Text</label>
-                           <input class="ib-lg" type="text" name="" placeholder="">
-                        </div>
-                         <div class="col-right" style="text-align: right;">
-                           <button type="button">Save Settings</button>
-                         </div>
-                     </div>                       
-                  </div>
-               </div> 
-            </div>
-         </div>
-      </div>
-
       <!-- Optional JavaScript -- jQuery first, then Popper.js, then Bootstrap JS -->
       <script src="assets/js/jquery-3.3.1.slim.min.js"></script>
       <script src="assets/js/popper.min.js"></script>
